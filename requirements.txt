@@ -1,0 +1,4 @@
+dnspython>=2.6
+pytest>=8
+matplotlib>=3.8
+pillow>=10
