@@ -221,6 +221,7 @@ def main():
     ap.add_argument("--policies", nargs="+", default=["none", "fixed", "ttl", "volatile"])
     ap.add_argument("--out", default=os.path.join(ROOT, "results", "docker_results.json"))
     ap.add_argument("--learn", type=float, default=None, help="length of the learning period in seconds (default 150)")
+    ap.add_argument("--history-len", type=int, default=None, help="answers remembered per name for rotation detection (default 20)")
     a = ap.parse_args()
     if a.learn:
         global LEARN
@@ -230,7 +231,9 @@ def main():
         label, _, est = p.partition(":")
         pol = label
         env = {"ESTIMATOR": est} if est else {}
-        res = run_policy(p.replace(":", "_") + (f"_learn{int(a.learn)}" if a.learn else ""), pol, capture=(p in ("fixed", "volatile") and not a.learn), **env)
+        if a.history_len:
+            env["HISTORY_LEN"] = a.history_len
+        res = run_policy(p.replace(":", "_") + (f"_learn{int(a.learn)}" if a.learn else "") + (f"_hist{a.history_len}" if a.history_len else ""), pol, capture=(p in ("fixed", "volatile") and not a.learn and not a.history_len), **env)
         res["summary"] = summarise(res)
         results.append(res)
         for k, v in res["summary"].items():

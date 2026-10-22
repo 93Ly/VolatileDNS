@@ -1,0 +1,7579 @@
+[
+ {
+  "label": "volatile_learn600",
+  "policy": "volatile",
+  "env": {},
+  "rows": [
+   {
+    "t": 0.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 19.4
+   },
+   {
+    "t": 0.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 45.8
+   },
+   {
+    "t": 0.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 46.1
+   },
+   {
+    "t": 0.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.0
+   },
+   {
+    "t": 4.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.4
+   },
+   {
+    "t": 4.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 18.3
+   },
+   {
+    "t": 4.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 18.7
+   },
+   {
+    "t": 4.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 18.4
+   },
+   {
+    "t": 8.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.1
+   },
+   {
+    "t": 8.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 42.7
+   },
+   {
+    "t": 8.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 48.2
+   },
+   {
+    "t": 8.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.4
+   },
+   {
+    "t": 12.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 61.7
+   },
+   {
+    "t": 12.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 23.8
+   },
+   {
+    "t": 12.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 19.0
+   },
+   {
+    "t": 12.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 48.1
+   },
+   {
+    "t": 16.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 20.0
+   },
+   {
+    "t": 16.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 38.3
+   },
+   {
+    "t": 16.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 41.0
+   },
+   {
+    "t": 16.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.0
+   },
+   {
+    "t": 20.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.4
+   },
+   {
+    "t": 20.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 16.8
+   },
+   {
+    "t": 20.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 17.2
+   },
+   {
+    "t": 20.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.0
+   },
+   {
+    "t": 24.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 41.2
+   },
+   {
+    "t": 24.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 41.1
+   },
+   {
+    "t": 24.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 38.5
+   },
+   {
+    "t": 24.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 41.1
+   },
+   {
+    "t": 28.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.5
+   },
+   {
+    "t": 28.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 27.0
+   },
+   {
+    "t": 28.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 24.3
+   },
+   {
+    "t": 28.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 21.1
+   },
+   {
+    "t": 32.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 23.8
+   },
+   {
+    "t": 32.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 45.6
+   },
+   {
+    "t": 32.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 44.4
+   },
+   {
+    "t": 32.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.9
+   },
+   {
+    "t": 36.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.9
+   },
+   {
+    "t": 36.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 15.7
+   },
+   {
+    "t": 36.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 18.0
+   },
+   {
+    "t": 36.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 42.0
+   },
+   {
+    "t": 40.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.3
+   },
+   {
+    "t": 40.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 40.9
+   },
+   {
+    "t": 40.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 42.0
+   },
+   {
+    "t": 40.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 18.3
+   },
+   {
+    "t": 44.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.3
+   },
+   {
+    "t": 44.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 21.6
+   },
+   {
+    "t": 44.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 20.5
+   },
+   {
+    "t": 44.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 25.0
+   },
+   {
+    "t": 48.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 51.6
+   },
+   {
+    "t": 48.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 44.0
+   },
+   {
+    "t": 48.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 39.2
+   },
+   {
+    "t": 48.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.2
+   },
+   {
+    "t": 52.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.0
+   },
+   {
+    "t": 52.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 20.2
+   },
+   {
+    "t": 52.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 22.3
+   },
+   {
+    "t": 52.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 21.4
+   },
+   {
+    "t": 56.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 27.0
+   },
+   {
+    "t": 56.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 76.9
+   },
+   {
+    "t": 56.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 100.3
+   },
+   {
+    "t": 56.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.0
+   },
+   {
+    "t": 60.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 70.5
+   },
+   {
+    "t": 60.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 68.3
+   },
+   {
+    "t": 60.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 81.5
+   },
+   {
+    "t": 60.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 95.1
+   },
+   {
+    "t": 64.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 21.6
+   },
+   {
+    "t": 64.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 52.7
+   },
+   {
+    "t": 64.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 49.6
+   },
+   {
+    "t": 64.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 19.8
+   },
+   {
+    "t": 68.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 27.4
+   },
+   {
+    "t": 68.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 23.4
+   },
+   {
+    "t": 68.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 36.1
+   },
+   {
+    "t": 68.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.8
+   },
+   {
+    "t": 72.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 71.1
+   },
+   {
+    "t": 72.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 66.8
+   },
+   {
+    "t": 72.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 99.4
+   },
+   {
+    "t": 72.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 77.9
+   },
+   {
+    "t": 76.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 20.9
+   },
+   {
+    "t": 76.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 18.8
+   },
+   {
+    "t": 76.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 20.6
+   },
+   {
+    "t": 76.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 18.9
+   },
+   {
+    "t": 80.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 24.5
+   },
+   {
+    "t": 80.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 48.9
+   },
+   {
+    "t": 80.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 45.9
+   },
+   {
+    "t": 80.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.7
+   },
+   {
+    "t": 84.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 54.2
+   },
+   {
+    "t": 84.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 16.3
+   },
+   {
+    "t": 84.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 20.6
+   },
+   {
+    "t": 84.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.9
+   },
+   {
+    "t": 88.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.5
+   },
+   {
+    "t": 88.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 52.4
+   },
+   {
+    "t": 88.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 57.7
+   },
+   {
+    "t": 88.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.8
+   },
+   {
+    "t": 92.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 18.2
+   },
+   {
+    "t": 92.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 18.9
+   },
+   {
+    "t": 92.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 18.1
+   },
+   {
+    "t": 92.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 19.0
+   },
+   {
+    "t": 96.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 52.1
+   },
+   {
+    "t": 96.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 44.8
+   },
+   {
+    "t": 96.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 42.8
+   },
+   {
+    "t": 96.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 50.4
+   },
+   {
+    "t": 100.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 25.8
+   },
+   {
+    "t": 100.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 18.1
+   },
+   {
+    "t": 100.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 16.9
+   },
+   {
+    "t": 100.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.0
+   },
+   {
+    "t": 104.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 64.2
+   },
+   {
+    "t": 104.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 52.6
+   },
+   {
+    "t": 104.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 45.2
+   },
+   {
+    "t": 104.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.8
+   },
+   {
+    "t": 108.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.4
+   },
+   {
+    "t": 108.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 19.2
+   },
+   {
+    "t": 108.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 18.1
+   },
+   {
+    "t": 108.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.2
+   },
+   {
+    "t": 112.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 26.3
+   },
+   {
+    "t": 112.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 47.3
+   },
+   {
+    "t": 112.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 45.8
+   },
+   {
+    "t": 112.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 19.7
+   },
+   {
+    "t": 116.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 25.1
+   },
+   {
+    "t": 116.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 17.9
+   },
+   {
+    "t": 116.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 18.8
+   },
+   {
+    "t": 116.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.7
+   },
+   {
+    "t": 120.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 44.3
+   },
+   {
+    "t": 120.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 51.0
+   },
+   {
+    "t": 120.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 44.8
+   },
+   {
+    "t": 120.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 48.6
+   },
+   {
+    "t": 124.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 47.9
+   },
+   {
+    "t": 124.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 34.3
+   },
+   {
+    "t": 124.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 18.2
+   },
+   {
+    "t": 124.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 23.5
+   },
+   {
+    "t": 128.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 20.1
+   },
+   {
+    "t": 128.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 40.5
+   },
+   {
+    "t": 128.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 36.9
+   },
+   {
+    "t": 128.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.6
+   },
+   {
+    "t": 132.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 44.5
+   },
+   {
+    "t": 132.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 18.1
+   },
+   {
+    "t": 132.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 15.9
+   },
+   {
+    "t": 132.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.7
+   },
+   {
+    "t": 136.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.6
+   },
+   {
+    "t": 136.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 44.5
+   },
+   {
+    "t": 136.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 37.3
+   },
+   {
+    "t": 136.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 15.6
+   },
+   {
+    "t": 140.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 18.8
+   },
+   {
+    "t": 140.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 17.4
+   },
+   {
+    "t": 140.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 17.9
+   },
+   {
+    "t": 140.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 18.7
+   },
+   {
+    "t": 144.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 45.4
+   },
+   {
+    "t": 144.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 41.1
+   },
+   {
+    "t": 144.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 42.8
+   },
+   {
+    "t": 144.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 41.7
+   },
+   {
+    "t": 148.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 23.5
+   },
+   {
+    "t": 148.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 18.2
+   },
+   {
+    "t": 148.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 15.4
+   },
+   {
+    "t": 148.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.4
+   },
+   {
+    "t": 152.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 22.0
+   },
+   {
+    "t": 152.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 50.4
+   },
+   {
+    "t": 152.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 55.3
+   },
+   {
+    "t": 152.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 20.3
+   },
+   {
+    "t": 156.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 47.9
+   },
+   {
+    "t": 156.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 18.8
+   },
+   {
+    "t": 156.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 19.0
+   },
+   {
+    "t": 156.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 45.5
+   },
+   {
+    "t": 160.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 26.4
+   },
+   {
+    "t": 160.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 55.0
+   },
+   {
+    "t": 160.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 53.5
+   },
+   {
+    "t": 160.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 20.0
+   },
+   {
+    "t": 164.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 22.6
+   },
+   {
+    "t": 164.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 19.8
+   },
+   {
+    "t": 164.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 20.5
+   },
+   {
+    "t": 164.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 18.5
+   },
+   {
+    "t": 168.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.9
+   },
+   {
+    "t": 168.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 44.3
+   },
+   {
+    "t": 168.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 45.0
+   },
+   {
+    "t": 168.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 47.7
+   },
+   {
+    "t": 172.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 23.2
+   },
+   {
+    "t": 172.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 16.9
+   },
+   {
+    "t": 172.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 15.0
+   },
+   {
+    "t": 172.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 18.4
+   },
+   {
+    "t": 176.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.7
+   },
+   {
+    "t": 176.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 42.1
+   },
+   {
+    "t": 176.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 44.4
+   },
+   {
+    "t": 176.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.3
+   },
+   {
+    "t": 180.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.8
+   },
+   {
+    "t": 180.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 17.9
+   },
+   {
+    "t": 180.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 20.8
+   },
+   {
+    "t": 180.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.7
+   },
+   {
+    "t": 184.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 18.2
+   },
+   {
+    "t": 184.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 39.5
+   },
+   {
+    "t": 184.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 39.1
+   },
+   {
+    "t": 184.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 18.1
+   },
+   {
+    "t": 188.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.1
+   },
+   {
+    "t": 188.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 17.1
+   },
+   {
+    "t": 188.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 15.8
+   },
+   {
+    "t": 188.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.7
+   },
+   {
+    "t": 192.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 44.3
+   },
+   {
+    "t": 192.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 37.7
+   },
+   {
+    "t": 192.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 38.2
+   },
+   {
+    "t": 192.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 38.5
+   },
+   {
+    "t": 196.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.5
+   },
+   {
+    "t": 196.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 18.3
+   },
+   {
+    "t": 196.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 14.2
+   },
+   {
+    "t": 196.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.0
+   },
+   {
+    "t": 200.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 20.6
+   },
+   {
+    "t": 200.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 42.5
+   },
+   {
+    "t": 200.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 42.0
+   },
+   {
+    "t": 200.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.2
+   },
+   {
+    "t": 204.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 45.9
+   },
+   {
+    "t": 204.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 17.7
+   },
+   {
+    "t": 204.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 18.0
+   },
+   {
+    "t": 204.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.2
+   },
+   {
+    "t": 208.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 19.9
+   },
+   {
+    "t": 208.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 42.0
+   },
+   {
+    "t": 208.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 42.1
+   },
+   {
+    "t": 208.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.0
+   },
+   {
+    "t": 212.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 19.5
+   },
+   {
+    "t": 212.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 18.8
+   },
+   {
+    "t": 212.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 16.9
+   },
+   {
+    "t": 212.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.5
+   },
+   {
+    "t": 216.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 40.2
+   },
+   {
+    "t": 216.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 37.9
+   },
+   {
+    "t": 216.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 42.5
+   },
+   {
+    "t": 216.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 38.5
+   },
+   {
+    "t": 220.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 20.1
+   },
+   {
+    "t": 220.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 16.8
+   },
+   {
+    "t": 220.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 18.6
+   },
+   {
+    "t": 220.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.4
+   },
+   {
+    "t": 224.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 19.7
+   },
+   {
+    "t": 224.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 47.8
+   },
+   {
+    "t": 224.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 55.0
+   },
+   {
+    "t": 224.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 25.5
+   },
+   {
+    "t": 228.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 42.6
+   },
+   {
+    "t": 228.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 15.0
+   },
+   {
+    "t": 228.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 14.8
+   },
+   {
+    "t": 228.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 39.7
+   },
+   {
+    "t": 232.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.8
+   },
+   {
+    "t": 232.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 41.8
+   },
+   {
+    "t": 232.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 41.5
+   },
+   {
+    "t": 232.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.3
+   },
+   {
+    "t": 236.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.1
+   },
+   {
+    "t": 236.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 17.5
+   },
+   {
+    "t": 236.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 15.6
+   },
+   {
+    "t": 236.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.7
+   },
+   {
+    "t": 240.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.0
+   },
+   {
+    "t": 240.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 41.1
+   },
+   {
+    "t": 240.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 38.3
+   },
+   {
+    "t": 240.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 39.8
+   },
+   {
+    "t": 244.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 20.2
+   },
+   {
+    "t": 244.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 15.7
+   },
+   {
+    "t": 244.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 16.7
+   },
+   {
+    "t": 244.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.2
+   },
+   {
+    "t": 248.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 19.9
+   },
+   {
+    "t": 248.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 39.0
+   },
+   {
+    "t": 248.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 38.7
+   },
+   {
+    "t": 248.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.2
+   },
+   {
+    "t": 252.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 58.4
+   },
+   {
+    "t": 252.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 15.6
+   },
+   {
+    "t": 252.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 15.7
+   },
+   {
+    "t": 252.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 37.5
+   },
+   {
+    "t": 256.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.5
+   },
+   {
+    "t": 256.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 40.8
+   },
+   {
+    "t": 256.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 39.6
+   },
+   {
+    "t": 256.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.2
+   },
+   {
+    "t": 260.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 24.9
+   },
+   {
+    "t": 260.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 16.8
+   },
+   {
+    "t": 260.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 17.4
+   },
+   {
+    "t": 260.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.2
+   },
+   {
+    "t": 264.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.8
+   },
+   {
+    "t": 264.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 38.2
+   },
+   {
+    "t": 264.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 40.3
+   },
+   {
+    "t": 264.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 38.3
+   },
+   {
+    "t": 268.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 21.3
+   },
+   {
+    "t": 268.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 15.6
+   },
+   {
+    "t": 268.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 18.3
+   },
+   {
+    "t": 268.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.8
+   },
+   {
+    "t": 272.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 20.2
+   },
+   {
+    "t": 272.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 38.7
+   },
+   {
+    "t": 272.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 39.5
+   },
+   {
+    "t": 272.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.4
+   },
+   {
+    "t": 276.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 44.7
+   },
+   {
+    "t": 276.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 15.9
+   },
+   {
+    "t": 276.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 18.5
+   },
+   {
+    "t": 276.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 43.9
+   },
+   {
+    "t": 280.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 21.5
+   },
+   {
+    "t": 280.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 45.0
+   },
+   {
+    "t": 280.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 41.0
+   },
+   {
+    "t": 280.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.5
+   },
+   {
+    "t": 284.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 24.5
+   },
+   {
+    "t": 284.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 23.9
+   },
+   {
+    "t": 284.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 21.1
+   },
+   {
+    "t": 284.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 27.8
+   },
+   {
+    "t": 288.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 53.2
+   },
+   {
+    "t": 288.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 38.1
+   },
+   {
+    "t": 288.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 40.4
+   },
+   {
+    "t": 288.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 42.4
+   },
+   {
+    "t": 292.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 23.6
+   },
+   {
+    "t": 292.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 17.9
+   },
+   {
+    "t": 292.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 16.6
+   },
+   {
+    "t": 292.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.8
+   },
+   {
+    "t": 296.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 22.6
+   },
+   {
+    "t": 296.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 45.8
+   },
+   {
+    "t": 296.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 47.9
+   },
+   {
+    "t": 296.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.1
+   },
+   {
+    "t": 300.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 48.3
+   },
+   {
+    "t": 300.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 17.4
+   },
+   {
+    "t": 300.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 16.5
+   },
+   {
+    "t": 300.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 42.1
+   },
+   {
+    "t": 304.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.8
+   },
+   {
+    "t": 304.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 45.6
+   },
+   {
+    "t": 304.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 40.2
+   },
+   {
+    "t": 304.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 19.7
+   },
+   {
+    "t": 308.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 24.9
+   },
+   {
+    "t": 308.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 15.7
+   },
+   {
+    "t": 308.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 17.7
+   },
+   {
+    "t": 308.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.1
+   },
+   {
+    "t": 312.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 40.4
+   },
+   {
+    "t": 312.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 47.6
+   },
+   {
+    "t": 312.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 40.1
+   },
+   {
+    "t": 312.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 40.1
+   },
+   {
+    "t": 316.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.3
+   },
+   {
+    "t": 316.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 17.2
+   },
+   {
+    "t": 316.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 15.9
+   },
+   {
+    "t": 316.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 14.8
+   },
+   {
+    "t": 320.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 22.7
+   },
+   {
+    "t": 320.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 40.9
+   },
+   {
+    "t": 320.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 38.0
+   },
+   {
+    "t": 320.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.1
+   },
+   {
+    "t": 324.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 48.8
+   },
+   {
+    "t": 324.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 16.0
+   },
+   {
+    "t": 324.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 17.0
+   },
+   {
+    "t": 324.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 39.3
+   },
+   {
+    "t": 328.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 20.5
+   },
+   {
+    "t": 328.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 41.0
+   },
+   {
+    "t": 328.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 43.3
+   },
+   {
+    "t": 328.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.7
+   },
+   {
+    "t": 332.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 21.0
+   },
+   {
+    "t": 332.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 15.2
+   },
+   {
+    "t": 332.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 16.3
+   },
+   {
+    "t": 332.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.2
+   },
+   {
+    "t": 336.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 41.4
+   },
+   {
+    "t": 336.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 37.9
+   },
+   {
+    "t": 336.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 40.0
+   },
+   {
+    "t": 336.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 36.1
+   },
+   {
+    "t": 340.0,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.9
+   },
+   {
+    "t": 340.0,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 10.7
+   },
+   {
+    "t": 340.0,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 11.6
+   },
+   {
+    "t": 340.0,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 10.6
+   },
+   {
+    "t": 344.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.0
+   },
+   {
+    "t": 344.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 24.2
+   },
+   {
+    "t": 344.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 25.0
+   },
+   {
+    "t": 344.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.4
+   },
+   {
+    "t": 348.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 30.5
+   },
+   {
+    "t": 348.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 10.1
+   },
+   {
+    "t": 348.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 10.7
+   },
+   {
+    "t": 348.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 24.5
+   },
+   {
+    "t": 352.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.3
+   },
+   {
+    "t": 352.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 25.6
+   },
+   {
+    "t": 352.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.9
+   },
+   {
+    "t": 352.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 10.8
+   },
+   {
+    "t": 356.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.9
+   },
+   {
+    "t": 356.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 10.4
+   },
+   {
+    "t": 356.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 10.7
+   },
+   {
+    "t": 356.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.2
+   },
+   {
+    "t": 360.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 28.8
+   },
+   {
+    "t": 360.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 23.8
+   },
+   {
+    "t": 360.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 25.9
+   },
+   {
+    "t": 360.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 27.3
+   },
+   {
+    "t": 364.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.3
+   },
+   {
+    "t": 364.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 11.5
+   },
+   {
+    "t": 364.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 14.9
+   },
+   {
+    "t": 364.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 12.3
+   },
+   {
+    "t": 368.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 18.2
+   },
+   {
+    "t": 368.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 26.6
+   },
+   {
+    "t": 368.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 27.1
+   },
+   {
+    "t": 368.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.7
+   },
+   {
+    "t": 372.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 50.7
+   },
+   {
+    "t": 372.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 10.7
+   },
+   {
+    "t": 372.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 13.7
+   },
+   {
+    "t": 372.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 25.1
+   },
+   {
+    "t": 376.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.5
+   },
+   {
+    "t": 376.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 28.6
+   },
+   {
+    "t": 376.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 25.1
+   },
+   {
+    "t": 376.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.4
+   },
+   {
+    "t": 380.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 18.1
+   },
+   {
+    "t": 380.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 10.3
+   },
+   {
+    "t": 380.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 10.6
+   },
+   {
+    "t": 380.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.1
+   },
+   {
+    "t": 384.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.2
+   },
+   {
+    "t": 384.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 28.4
+   },
+   {
+    "t": 384.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 27.0
+   },
+   {
+    "t": 384.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 29.6
+   },
+   {
+    "t": 388.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 19.0
+   },
+   {
+    "t": 388.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 11.3
+   },
+   {
+    "t": 388.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 11.5
+   },
+   {
+    "t": 388.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 10.6
+   },
+   {
+    "t": 392.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 14.3
+   },
+   {
+    "t": 392.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 24.1
+   },
+   {
+    "t": 392.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 23.7
+   },
+   {
+    "t": 392.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.7
+   },
+   {
+    "t": 396.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 46.5
+   },
+   {
+    "t": 396.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 11.0
+   },
+   {
+    "t": 396.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 11.3
+   },
+   {
+    "t": 396.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 24.2
+   },
+   {
+    "t": 400.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.7
+   },
+   {
+    "t": 400.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 24.4
+   },
+   {
+    "t": 400.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.6
+   },
+   {
+    "t": 400.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.6
+   },
+   {
+    "t": 404.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 12.3
+   },
+   {
+    "t": 404.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 11.2
+   },
+   {
+    "t": 404.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 10.6
+   },
+   {
+    "t": 404.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.5
+   },
+   {
+    "t": 408.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 30.4
+   },
+   {
+    "t": 408.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 29.8
+   },
+   {
+    "t": 408.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 27.1
+   },
+   {
+    "t": 408.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 23.6
+   },
+   {
+    "t": 412.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.8
+   },
+   {
+    "t": 412.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 11.1
+   },
+   {
+    "t": 412.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 12.9
+   },
+   {
+    "t": 412.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.2
+   },
+   {
+    "t": 416.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.7
+   },
+   {
+    "t": 416.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 24.2
+   },
+   {
+    "t": 416.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.3
+   },
+   {
+    "t": 416.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.4
+   },
+   {
+    "t": 420.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 34.9
+   },
+   {
+    "t": 420.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 10.4
+   },
+   {
+    "t": 420.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 12.2
+   },
+   {
+    "t": 420.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 23.4
+   },
+   {
+    "t": 424.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 13.0
+   },
+   {
+    "t": 424.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 27.6
+   },
+   {
+    "t": 424.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 25.5
+   },
+   {
+    "t": 424.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 10.3
+   },
+   {
+    "t": 428.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.8
+   },
+   {
+    "t": 428.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 11.5
+   },
+   {
+    "t": 428.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 12.7
+   },
+   {
+    "t": 428.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.9
+   },
+   {
+    "t": 432.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 37.1
+   },
+   {
+    "t": 432.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 23.6
+   },
+   {
+    "t": 432.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.8
+   },
+   {
+    "t": 432.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 23.5
+   },
+   {
+    "t": 436.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.4
+   },
+   {
+    "t": 436.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 11.4
+   },
+   {
+    "t": 436.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 12.9
+   },
+   {
+    "t": 436.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.5
+   },
+   {
+    "t": 440.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.4
+   },
+   {
+    "t": 440.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 23.1
+   },
+   {
+    "t": 440.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 23.7
+   },
+   {
+    "t": 440.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.2
+   },
+   {
+    "t": 444.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.2
+   },
+   {
+    "t": 444.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 13.2
+   },
+   {
+    "t": 444.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 12.9
+   },
+   {
+    "t": 444.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 27.7
+   },
+   {
+    "t": 448.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.9
+   },
+   {
+    "t": 448.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 26.2
+   },
+   {
+    "t": 448.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.7
+   },
+   {
+    "t": 448.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.3
+   },
+   {
+    "t": 452.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 13.3
+   },
+   {
+    "t": 452.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 11.5
+   },
+   {
+    "t": 452.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 11.9
+   },
+   {
+    "t": 452.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 9.6
+   },
+   {
+    "t": 456.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 23.6
+   },
+   {
+    "t": 456.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 25.7
+   },
+   {
+    "t": 456.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 22.9
+   },
+   {
+    "t": 456.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 23.5
+   },
+   {
+    "t": 460.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 15.8
+   },
+   {
+    "t": 460.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 10.2
+   },
+   {
+    "t": 460.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 11.3
+   },
+   {
+    "t": 460.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.0
+   },
+   {
+    "t": 464.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 13.3
+   },
+   {
+    "t": 464.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 25.5
+   },
+   {
+    "t": 464.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 26.9
+   },
+   {
+    "t": 464.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.8
+   },
+   {
+    "t": 468.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 27.2
+   },
+   {
+    "t": 468.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 11.9
+   },
+   {
+    "t": 468.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 10.5
+   },
+   {
+    "t": 468.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 25.1
+   },
+   {
+    "t": 472.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.2
+   },
+   {
+    "t": 472.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 28.6
+   },
+   {
+    "t": 472.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 31.2
+   },
+   {
+    "t": 472.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 12.3
+   },
+   {
+    "t": 476.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.9
+   },
+   {
+    "t": 476.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 11.5
+   },
+   {
+    "t": 476.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 11.0
+   },
+   {
+    "t": 476.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.7
+   },
+   {
+    "t": 480.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 29.1
+   },
+   {
+    "t": 480.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 22.5
+   },
+   {
+    "t": 480.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 24.0
+   },
+   {
+    "t": 480.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 26.2
+   },
+   {
+    "t": 484.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.0
+   },
+   {
+    "t": 484.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 13.2
+   },
+   {
+    "t": 484.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 10.7
+   },
+   {
+    "t": 484.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 12.0
+   },
+   {
+    "t": 488.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 14.0
+   },
+   {
+    "t": 488.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 23.9
+   },
+   {
+    "t": 488.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 22.5
+   },
+   {
+    "t": 488.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.7
+   },
+   {
+    "t": 492.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 30.4
+   },
+   {
+    "t": 492.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 11.5
+   },
+   {
+    "t": 492.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 11.6
+   },
+   {
+    "t": 492.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 24.6
+   },
+   {
+    "t": 496.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 15.9
+   },
+   {
+    "t": 496.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 22.7
+   },
+   {
+    "t": 496.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 21.3
+   },
+   {
+    "t": 496.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 9.5
+   },
+   {
+    "t": 500.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.3
+   },
+   {
+    "t": 500.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 10.6
+   },
+   {
+    "t": 500.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 12.2
+   },
+   {
+    "t": 500.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 10.9
+   },
+   {
+    "t": 504.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 24.9
+   },
+   {
+    "t": 504.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 24.8
+   },
+   {
+    "t": 504.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 24.8
+   },
+   {
+    "t": 504.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 25.8
+   },
+   {
+    "t": 508.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 15.9
+   },
+   {
+    "t": 508.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 10.7
+   },
+   {
+    "t": 508.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 12.4
+   },
+   {
+    "t": 508.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.5
+   },
+   {
+    "t": 512.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.7
+   },
+   {
+    "t": 512.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 25.1
+   },
+   {
+    "t": 512.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 26.8
+   },
+   {
+    "t": 512.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.7
+   },
+   {
+    "t": 516.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.6
+   },
+   {
+    "t": 516.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 10.5
+   },
+   {
+    "t": 516.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 9.6
+   },
+   {
+    "t": 516.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 25.2
+   },
+   {
+    "t": 520.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.3
+   },
+   {
+    "t": 520.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 21.8
+   },
+   {
+    "t": 520.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 21.6
+   },
+   {
+    "t": 520.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 10.5
+   },
+   {
+    "t": 524.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 13.0
+   },
+   {
+    "t": 524.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 11.6
+   },
+   {
+    "t": 524.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 12.0
+   },
+   {
+    "t": 524.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 13.4
+   },
+   {
+    "t": 528.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 28.3
+   },
+   {
+    "t": 528.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 21.4
+   },
+   {
+    "t": 528.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 25.7
+   },
+   {
+    "t": 528.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 24.3
+   },
+   {
+    "t": 532.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.0
+   },
+   {
+    "t": 532.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 11.3
+   },
+   {
+    "t": 532.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 11.2
+   },
+   {
+    "t": 532.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.6
+   },
+   {
+    "t": 536.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 19.1
+   },
+   {
+    "t": 536.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 26.3
+   },
+   {
+    "t": 536.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 28.8
+   },
+   {
+    "t": 536.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.1
+   },
+   {
+    "t": 540.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.3
+   },
+   {
+    "t": 540.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 12.5
+   },
+   {
+    "t": 540.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 19.8
+   },
+   {
+    "t": 540.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 34.6
+   },
+   {
+    "t": 544.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.7
+   },
+   {
+    "t": 544.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 26.1
+   },
+   {
+    "t": 544.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.1
+   },
+   {
+    "t": 544.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.8
+   },
+   {
+    "t": 548.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.8
+   },
+   {
+    "t": 548.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 13.0
+   },
+   {
+    "t": 548.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 10.4
+   },
+   {
+    "t": 548.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.1
+   },
+   {
+    "t": 552.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 35.2
+   },
+   {
+    "t": 552.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 26.6
+   },
+   {
+    "t": 552.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 25.8
+   },
+   {
+    "t": 552.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 29.3
+   },
+   {
+    "t": 556.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 13.6
+   },
+   {
+    "t": 556.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 11.6
+   },
+   {
+    "t": 556.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 9.9
+   },
+   {
+    "t": 556.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 11.0
+   },
+   {
+    "t": 560.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 17.8
+   },
+   {
+    "t": 560.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.31",
+    "ms": 28.1
+   },
+   {
+    "t": 560.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 27.9
+   },
+   {
+    "t": 560.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.4
+   },
+   {
+    "t": 564.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 33.5
+   },
+   {
+    "t": 564.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.31",
+    "ms": 11.8
+   },
+   {
+    "t": 564.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 11.7
+   },
+   {
+    "t": 564.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 26.1
+   },
+   {
+    "t": 568.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 16.6
+   },
+   {
+    "t": 568.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 27.5
+   },
+   {
+    "t": 568.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.8
+   },
+   {
+    "t": 568.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 12.2
+   },
+   {
+    "t": 572.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.3
+   },
+   {
+    "t": 572.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 11.1
+   },
+   {
+    "t": 572.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 10.9
+   },
+   {
+    "t": 572.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 11.1
+   },
+   {
+    "t": 576.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 42.3
+   },
+   {
+    "t": 576.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.32",
+    "ms": 25.4
+   },
+   {
+    "t": 576.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 24.2
+   },
+   {
+    "t": 576.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 20.6
+   },
+   {
+    "t": 580.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 22.2
+   },
+   {
+    "t": 580.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.32",
+    "ms": 10.6
+   },
+   {
+    "t": 580.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.43",
+    "ms": 13.6
+   },
+   {
+    "t": 580.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.1
+   },
+   {
+    "t": 584.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 12.6
+   },
+   {
+    "t": 584.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 28.8
+   },
+   {
+    "t": 584.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.42",
+    "ms": 24.9
+   },
+   {
+    "t": 584.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.1
+   },
+   {
+    "t": 588.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.5
+   },
+   {
+    "t": 588.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 12.0
+   },
+   {
+    "t": 588.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 12.6
+   },
+   {
+    "t": 588.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.1
+   },
+   {
+    "t": 592.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 12.0
+   },
+   {
+    "t": 592.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.33",
+    "ms": 24.7
+   },
+   {
+    "t": 592.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 25.3
+   },
+   {
+    "t": 592.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.5
+   },
+   {
+    "t": 596.1,
+    "name": "portal",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.5
+   },
+   {
+    "t": 596.1,
+    "name": "session",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.33",
+    "ms": 12.1
+   },
+   {
+    "t": 596.1,
+    "name": "cdn",
+    "phase": "learn",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 11.3
+   },
+   {
+    "t": 596.1,
+    "name": "gone",
+    "phase": "learn",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.8
+   },
+   {
+    "t": 600.1,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.7
+   },
+   {
+    "t": 600.1,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 25.6
+   },
+   {
+    "t": 600.1,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 24.4
+   },
+   {
+    "t": 600.1,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.2
+   },
+   {
+    "t": 604.1,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.5
+   },
+   {
+    "t": 604.1,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 12.6
+   },
+   {
+    "t": 604.1,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.44",
+    "ms": 12.1
+   },
+   {
+    "t": 604.1,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.1
+   },
+   {
+    "t": 608.1,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.2
+   },
+   {
+    "t": 608.1,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.34",
+    "ms": 1620.4
+   },
+   {
+    "t": 608.1,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.44",
+    "ms": 1618.9
+   },
+   {
+    "t": 608.1,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1618.9
+   },
+   {
+    "t": 613.3,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 1619.9
+   },
+   {
+    "t": 613.3,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "wrong",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.34",
+    "ms": 10.2
+   },
+   {
+    "t": 613.3,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 10.9
+   },
+   {
+    "t": 613.3,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.8
+   },
+   {
+    "t": 617.3,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 12.2
+   },
+   {
+    "t": 617.3,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "wrong",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.34",
+    "ms": 12.0
+   },
+   {
+    "t": 617.3,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 11.7
+   },
+   {
+    "t": 617.3,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.3
+   },
+   {
+    "t": 621.3,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 14.4
+   },
+   {
+    "t": 621.3,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "wrong",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.34",
+    "ms": 1615.1
+   },
+   {
+    "t": 621.3,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.44",
+    "ms": 1620.3
+   },
+   {
+    "t": 621.3,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1616.0
+   },
+   {
+    "t": 627.5,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 1616.9
+   },
+   {
+    "t": 627.5,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "wrong",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.34",
+    "ms": 12.0
+   },
+   {
+    "t": 627.5,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 13.4
+   },
+   {
+    "t": 627.5,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.2
+   },
+   {
+    "t": 631.5,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 17.5
+   },
+   {
+    "t": 631.5,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "wrong",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.34",
+    "ms": 10.6
+   },
+   {
+    "t": 631.5,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 13.3
+   },
+   {
+    "t": 631.5,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 13.0
+   },
+   {
+    "t": 635.5,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 14.9
+   },
+   {
+    "t": 635.5,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1619.5
+   },
+   {
+    "t": 635.5,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 1620.0
+   },
+   {
+    "t": 635.5,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1622.6
+   },
+   {
+    "t": 640.7,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 1627.0
+   },
+   {
+    "t": 640.7,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.7
+   },
+   {
+    "t": 640.7,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 11.7
+   },
+   {
+    "t": 640.7,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.3
+   },
+   {
+    "t": 644.7,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 12.3
+   },
+   {
+    "t": 644.7,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.1
+   },
+   {
+    "t": 644.7,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 10.9
+   },
+   {
+    "t": 644.7,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.9
+   },
+   {
+    "t": 648.7,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 15.6
+   },
+   {
+    "t": 648.7,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1614.6
+   },
+   {
+    "t": 648.7,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 1620.3
+   },
+   {
+    "t": 648.7,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1620.3
+   },
+   {
+    "t": 653.9,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 1619.2
+   },
+   {
+    "t": 653.9,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.2
+   },
+   {
+    "t": 653.9,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 12.9
+   },
+   {
+    "t": 653.9,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.4
+   },
+   {
+    "t": 657.9,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 12.2
+   },
+   {
+    "t": 657.9,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.3
+   },
+   {
+    "t": 657.9,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.44",
+    "ms": 10.7
+   },
+   {
+    "t": 657.9,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.3
+   },
+   {
+    "t": 661.9,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 14.5
+   },
+   {
+    "t": 661.9,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1619.3
+   },
+   {
+    "t": 661.9,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.41",
+    "ms": 1614.8
+   },
+   {
+    "t": 661.9,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1618.7
+   },
+   {
+    "t": 667.0,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "ok",
+    "stale": true,
+    "ttl": 30,
+    "addr": "172.28.0.10",
+    "ms": 1617.2
+   },
+   {
+    "t": 667.0,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.9
+   },
+   {
+    "t": 667.0,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 9.8
+   },
+   {
+    "t": 667.0,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.1
+   },
+   {
+    "t": 671.0,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 16.1
+   },
+   {
+    "t": 671.0,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.9
+   },
+   {
+    "t": 671.0,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.3
+   },
+   {
+    "t": 671.0,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.9
+   },
+   {
+    "t": 675.0,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 14.9
+   },
+   {
+    "t": 675.0,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1628.6
+   },
+   {
+    "t": 675.0,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1617.5
+   },
+   {
+    "t": 675.0,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1621.5
+   },
+   {
+    "t": 679.9,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1614.9
+   },
+   {
+    "t": 679.9,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.1
+   },
+   {
+    "t": 679.9,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.7
+   },
+   {
+    "t": 679.9,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 31.6
+   },
+   {
+    "t": 683.9,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 17.0
+   },
+   {
+    "t": 683.9,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.7
+   },
+   {
+    "t": 683.9,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.7
+   },
+   {
+    "t": 683.9,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.5
+   },
+   {
+    "t": 687.9,
+    "name": "portal",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 15.9
+   },
+   {
+    "t": 687.9,
+    "name": "session",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1620.9
+   },
+   {
+    "t": 687.9,
+    "name": "cdn",
+    "phase": "outage",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 1615.3
+   },
+   {
+    "t": 687.9,
+    "name": "gone",
+    "phase": "outage",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 17.7
+   },
+   {
+    "t": 691.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 29.3
+   },
+   {
+    "t": 691.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 8.8
+   },
+   {
+    "t": 691.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.8
+   },
+   {
+    "t": 691.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.2
+   },
+   {
+    "t": 695.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 14.5
+   },
+   {
+    "t": 695.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 9.9
+   },
+   {
+    "t": 695.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.0
+   },
+   {
+    "t": 695.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 12.0
+   },
+   {
+    "t": 699.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 16.0
+   },
+   {
+    "t": 699.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.34",
+    "ms": 24.8
+   },
+   {
+    "t": 699.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "servfail",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.9
+   },
+   {
+    "t": 699.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 10.9
+   },
+   {
+    "t": 703.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 33.3
+   },
+   {
+    "t": 703.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.34",
+    "ms": 18.6
+   },
+   {
+    "t": 703.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 32.0
+   },
+   {
+    "t": 703.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.9
+   },
+   {
+    "t": 707.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 12.8
+   },
+   {
+    "t": 707.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 24.5
+   },
+   {
+    "t": 707.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 11.8
+   },
+   {
+    "t": 707.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.6
+   },
+   {
+    "t": 711.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 12.4
+   },
+   {
+    "t": 711.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 12.7
+   },
+   {
+    "t": 711.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.41",
+    "ms": 27.5
+   },
+   {
+    "t": 711.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.6
+   },
+   {
+    "t": 715.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 27.7
+   },
+   {
+    "t": 715.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.35",
+    "ms": 25.7
+   },
+   {
+    "t": 715.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.41",
+    "ms": 11.0
+   },
+   {
+    "t": 715.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.7
+   },
+   {
+    "t": 719.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 6,
+    "addr": "172.28.0.10",
+    "ms": 17.5
+   },
+   {
+    "t": 719.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "wrong",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.35",
+    "ms": 12.6
+   },
+   {
+    "t": 719.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.44",
+    "ms": 27.0
+   },
+   {
+    "t": 719.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.4
+   },
+   {
+    "t": 723.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 2,
+    "addr": "172.28.0.10",
+    "ms": 15.7
+   },
+   {
+    "t": 723.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.30",
+    "ms": 25.1
+   },
+   {
+    "t": 723.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.42",
+    "ms": 9.9
+   },
+   {
+    "t": 723.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 20.2
+   },
+   {
+    "t": 727.9,
+    "name": "portal",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 10,
+    "addr": "172.28.0.10",
+    "ms": 31.0
+   },
+   {
+    "t": 727.9,
+    "name": "session",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 1,
+    "addr": "172.28.0.30",
+    "ms": 14.2
+   },
+   {
+    "t": 727.9,
+    "name": "cdn",
+    "phase": "after",
+    "outcome": "ok",
+    "stale": false,
+    "ttl": 5,
+    "addr": "172.28.0.43",
+    "ms": 26.2
+   },
+   {
+    "t": 727.9,
+    "name": "gone",
+    "phase": "after",
+    "outcome": "nxdomain",
+    "stale": false,
+    "ttl": null,
+    "addr": null,
+    "ms": 11.0
+   }
+  ],
+  "events": [
+   [
+    "move",
+    10.024460315704346,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    25.07249402999878,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    40.02718544006348,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    55.18053603172302,
+    "172.28.0.34"
+   ],
+   [
+    "move",
+    70.0445442199707,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    85.19930362701416,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    100.13322854042053,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    115.02087163925171,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    130.14649844169617,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    145.0631868839264,
+    "172.28.0.34"
+   ],
+   [
+    "move",
+    160.08828711509705,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    175.05338859558105,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    190.1239414215088,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    205.0661633014679,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    220.01683282852173,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    235.0574460029602,
+    "172.28.0.34"
+   ],
+   [
+    "move",
+    250.02332711219788,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    265.12253618240356,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    280.0601713657379,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    295.07452845573425,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    310.16124749183655,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    325.15309715270996,
+    "172.28.0.34"
+   ],
+   [
+    "move",
+    340.15154004096985,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    355.03751945495605,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    370.1381947994232,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    385.192764043808,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    400.00406408309937,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    415.1875123977661,
+    "172.28.0.34"
+   ],
+   [
+    "move",
+    430.1409373283386,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    445.01128792762756,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    460.1105408668518,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    475.024377822876,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    490.00599932670593,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    505.1378688812256,
+    "172.28.0.34"
+   ],
+   [
+    "move",
+    520.1055920124054,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    535.064112663269,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    550.0503363609314,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    565.1795008182526,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    580.1816437244415,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    595.1694869995117,
+    "172.28.0.34"
+   ],
+   [
+    "outage_start",
+    600.103732585907
+   ],
+   [
+    "move",
+    610.0899744033813,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    625.1869297027588,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    640.1578974723816,
+    "172.28.0.31"
+   ],
+   [
+    "move",
+    655.1225364208221,
+    "172.28.0.32"
+   ],
+   [
+    "move",
+    670.0598084926605,
+    "172.28.0.33"
+   ],
+   [
+    "move",
+    685.1488347053528,
+    "172.28.0.34"
+   ],
+   [
+    "outage_end",
+    690.0741868019104
+   ],
+   [
+    "move",
+    700.0252411365509,
+    "172.28.0.35"
+   ],
+   [
+    "move",
+    715.0208806991577,
+    "172.28.0.30"
+   ],
+   [
+    "move",
+    730.0027770996094,
+    "172.28.0.31"
+   ]
+  ],
+  "proxy_log_tail": "VolatileDNS [volatile] listening on 0.0.0.0:53 (UDP+TCP), upstream 172.28.0.2:53\n",
+  "summary": {
+   "outage/portal": {
+    "ok": 16,
+    "wrong": 0,
+    "servfail": 5,
+    "nxdomain": 0,
+    "stale": 13,
+    "n": 21,
+    "max_ms": 1627.0
+   },
+   "outage/session": {
+    "ok": 3,
+    "wrong": 5,
+    "servfail": 13,
+    "nxdomain": 0,
+    "stale": 6,
+    "n": 21,
+    "max_ms": 1628.6
+   },
+   "outage/cdn": {
+    "ok": 15,
+    "wrong": 0,
+    "servfail": 6,
+    "nxdomain": 0,
+    "stale": 13,
+    "n": 21,
+    "max_ms": 1620.3
+   },
+   "outage/gone": {
+    "ok": 0,
+    "wrong": 0,
+    "servfail": 18,
+    "nxdomain": 3,
+    "stale": 0,
+    "n": 21,
+    "max_ms": 1622.6
+   },
+   "after/portal": {
+    "ok": 10,
+    "wrong": 0,
+    "servfail": 0,
+    "nxdomain": 0,
+    "stale": 0,
+    "n": 10,
+    "max_ms": 33.3
+   },
+   "after/session": {
+    "ok": 6,
+    "wrong": 2,
+    "servfail": 2,
+    "nxdomain": 0,
+    "stale": 0,
+    "n": 10,
+    "max_ms": 25.7
+   },
+   "after/cdn": {
+    "ok": 7,
+    "wrong": 0,
+    "servfail": 3,
+    "nxdomain": 0,
+    "stale": 0,
+    "n": 10,
+    "max_ms": 32.0
+   },
+   "after/gone": {
+    "ok": 0,
+    "wrong": 0,
+    "servfail": 0,
+    "nxdomain": 10,
+    "stale": 0,
+    "n": 10,
+    "max_ms": 20.2
+   }
+  }
+ }
+]

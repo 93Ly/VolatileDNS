@@ -23,7 +23,7 @@ services:
     command: ["--policy", "${POLICY:-volatile}", "--listen", "0.0.0.0:53", "--upstream", "172.28.0.2:53",
               "--db", "/data/vdns.sqlite", "--s-cap", "${S_CAP:-60}", "--s-fix", "${S_FIX:-60}", "--ttl-mult", "${TTL_MULT:-10}",
               "--epsilon", "${EPS:-0.05}", "--prior-seconds", "${PRIOR:-3600}", "--estimator", "${ESTIMATOR:-counted}",
-              "--failure-recheck", "${RECHECK:-10}", "--no-restore"]
+              "--failure-recheck", "${RECHECK:-10}", "--history-len", "${HISTORY_LEN:-20}", "--no-restore"]
     volumes: ["./data:/data"]
     ports: ["127.0.0.1:5380:53/udp", "127.0.0.1:5380:53/tcp"]
     networks: {lab: {ipv4_address: 172.28.0.3}}

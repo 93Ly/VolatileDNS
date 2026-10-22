@@ -30,7 +30,13 @@ POLICIES = {
     "ttl": dict(policy="ttl", ttl_mult=10.0),
     "volatile": dict(policy="volatile", epsilon=0.05),
     "volatile (censored estimator)": dict(policy="volatile", epsilon=0.05, estimator="censored"),
+    "volatile (risk 20 %)": dict(policy="volatile", epsilon=0.20),
+    "volatile (risk 50 %)": dict(policy="volatile", epsilon=0.50),
+    "volatile (beta 600 s)": dict(policy="volatile", epsilon=0.05, prior_seconds=600.0),
+    "volatile (beta 600 s, risk 20 %)": dict(policy="volatile", epsilon=0.20, prior_seconds=600.0),
+    "volatile (beta 180 s, risk 20 %)": dict(policy="volatile", epsilon=0.20, prior_seconds=180.0),
 }
+HIST_KEYS = ("estimator", "prior_seconds", "prior_changes", "count_rotation", "history_len")
 
 
 def load(path, min_obs=20):
@@ -130,21 +136,21 @@ def run(trace, learn_s, outage_s, starts, poll, window, seed):
             continue
         clk = VClock()
         up = TraceUpstream(world, clk)
-        warm = Engine(base, up, clk)
-        asyncio.run(learn(warm, clk, names, start, poll))
+        learned = {}
         for label, kw in POLICIES.items():
-            hv = {k: kw[k] for k in ("estimator",) if k in kw}
-            if hv:                                            # the estimator needs its own learning period
-                clk2 = VClock()
-                up2 = TraceUpstream(world, clk2)
-                eng = Engine(base.with_(**kw), up2, clk2)
-                asyncio.run(learn(eng, clk2, names, start, poll))
-                clk_, up_ = clk2, up2
-            else:
-                clk_, up_ = clk, TraceUpstream(world, clk)
-                eng = Engine(base.with_(**kw), up_, clk_)
-                eng.cache, eng.history = copy.deepcopy(warm.cache), copy.deepcopy(warm.history)
-                eng.history.estimator = base.with_(**kw).estimator
+            hv = tuple(sorted((k, kw[k]) for k in HIST_KEYS if k in kw))
+            if hv not in learned:
+                clk_h = VClock()
+                up_h = TraceUpstream(world, clk_h)
+                eng_h = Engine(base.with_(**dict(hv)), up_h, clk_h)
+                asyncio.run(learn(eng_h, clk_h, names, start, poll))
+                learned[hv] = (eng_h, clk_h)
+            src_eng, src_clk = learned[hv]
+            clk_ = VClock()
+            clk_.t = src_clk.t
+            up_ = TraceUpstream(world, clk_)
+            eng = Engine(base.with_(**{k: v for k, v in kw.items()}), up_, clk_)
+            eng.cache, eng.history = copy.deepcopy(src_eng.cache), copy.deepcopy(src_eng.history)
             rng = random.Random(seed * 1000 + s_i)
             counts = asyncio.run(outage(eng, clk_, up_, world, names, start, outage_s, poll, window, rng))
             for name, c in counts.items():

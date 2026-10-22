@@ -29,6 +29,7 @@ def main():
     ap.add_argument("--try-timeout", type=float, default=0.8)
     ap.add_argument("--stale-ttl", type=int, default=30)
     ap.add_argument("--no-restore", action="store_true", help="do not reload cache/history from the database")
+    ap.add_argument("--history-len", type=int, default=20, help="answers remembered per name for rotation detection")
     a = ap.parse_args()
     lh, lp = hostport(a.listen)
     uh, up = hostport(a.upstream)
@@ -36,7 +37,7 @@ def main():
                  upstream_port=up, db_path=a.db, s_cap=a.s_cap, s_fix=a.s_fix,
                  ttl_mult=a.ttl_mult, epsilon=a.epsilon, count_rotation=a.strict,
                  estimator=a.estimator, prior_seconds=a.prior_seconds, failure_recheck=a.failure_recheck,
-                 try_timeout=a.try_timeout, stale_ttl=a.stale_ttl)
+                 try_timeout=a.try_timeout, stale_ttl=a.stale_ttl, history_len=a.history_len)
 
     async def run():
         srv = make_server(cfg, Store(cfg.db_path), restore=not a.no_restore)

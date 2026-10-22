@@ -1,28 +1,28 @@
 {
- "cold_miss_ms": 8.792000007815659,
+ "cold_miss_ms": 5.689900019206107,
  "cache_hit_udp_ms": {
   "n": 1000,
-  "median": 2.284899936057627,
-  "p95": 3.7073000567033887,
-  "p99": 5.3304999601095915,
-  "max": 82.01090001966804
+  "median": 0.5665000062435865,
+  "p95": 1.3269999762997031,
+  "p99": 1.9684000872075558,
+  "max": 17.33159995637834
  },
  "cache_hit_tcp_ms": {
   "n": 200,
-  "median": 3.3498500124551356,
-  "p95": 5.139600019901991,
-  "max": 6.093599949963391
+  "median": 0.8777499897405505,
+  "p95": 2.265600021928549,
+  "max": 4.765699966810644
  },
- "throughput_qps": 376.49605531438465,
+ "throughput_qps": 809.9428093254954,
  "stale_within_recheck_ms": {
-  "median": 2.9640999855473638,
-  "max": 19.187199999578297
+  "median": 1.5684999525547028,
+  "max": 2.9492999892681837
  },
- "recovery_s": 30.277764300000854,
+ "recovery_s": 30.110224599950016,
  "outage_steps": [
   {
    "step": "refresh after expiry (server up)",
-   "ms": 51.39939999207854,
+   "ms": 4.910099902190268,
    "rcode": 0,
    "addr": "172.28.0.10",
    "ttl": 1,
@@ -30,7 +30,7 @@
   },
   {
    "step": "1st query, server down (2 tries x 0.8 s)",
-   "ms": 1665.082300081849,
+   "ms": 1617.0246000401676,
    "rcode": 0,
    "addr": "172.28.0.10",
    "ttl": 30,
@@ -38,7 +38,7 @@
   },
   {
    "step": "next query, within the 30 s failure-recheck window",
-   "ms": 6.184000056236982,
+   "ms": 1.4841000083833933,
    "rcode": 0,
    "addr": "172.28.0.10",
    "ttl": 30,
@@ -46,7 +46,7 @@
   },
   {
    "step": "after 30 s: retries the server (still down)",
-   "ms": 1672.2524999640882,
+   "ms": 1621.2492999620736,
    "rcode": 0,
    "addr": "172.28.0.10",
    "ttl": 30,
@@ -54,7 +54,7 @@
   },
   {
    "step": "server back up: first fresh answer",
-   "ms": 47.31549997814,
+   "ms": 5.358700058422983,
    "rcode": 0,
    "addr": "172.28.0.99",
    "ttl": 1,
@@ -62,36 +62,37 @@
   }
  ],
  "engine_stats": {
-  "queries": 5361,
+  "queries": 5375,
   "cache_hits": 5200,
   "upstream_ok": 4,
   "upstream_fail": 2,
   "upstream_datagrams": 8,
-  "stale_served": 157,
+  "stale_served": 171,
   "servfail": 0,
   "nxdomain": 0,
-  "skipped_recheck": 155
+  "skipped_recheck": 169,
+  "coalesced": 0
  },
  "auth_queries": 4,
  "policies_first_query_in_outage": {
   "none": {
    "outcome": "SERVFAIL",
-   "ms": 1637.6197000499815,
+   "ms": 1615.8581000054255,
    "ttl": null
   },
   "fixed": {
    "outcome": "stale answer",
-   "ms": 1619.7004000423476,
+   "ms": 1618.2843999704346,
    "ttl": 30
   },
   "ttl": {
    "outcome": "stale answer",
-   "ms": 1621.6537998989224,
+   "ms": 1612.0868000434712,
    "ttl": 30
   },
   "volatile": {
    "outcome": "stale answer",
-   "ms": 1619.8014999972656,
+   "ms": 1613.7657999061048,
    "ttl": 30
   }
  }
