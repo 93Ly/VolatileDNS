@@ -198,8 +198,19 @@ def main():
     starts = [s for s in starts if s + a.outage <= horizon]
     summary, per_name, data = run(a.trace, a.learn, a.outage, starts, a.poll, a.window, 1)
     cls = classify(data)
+    by_class = {}
+    for label, d in per_name.items():
+        by_class[label] = {}
+        for klass, pred in (("stable", lambda n: cls[n]["real_changes"] == 0), ("changed", lambda n: cls[n]["real_changes"] > 0)):
+            tot = defaultdict(int)
+            for n, c in d.items():
+                if pred(n):
+                    for k, v in c.items():
+                        tot[k] += v
+            T = tot["total"] or 1
+            by_class[label][klass] = dict(queries=tot["total"], working=100 * tot["ok"] / T, dead=100 * tot["wrong"] / T, servfail=100 * tot["servfail"] / T)
     res = dict(trace=a.trace, names=len(data), horizon_s=horizon, learn_s=a.learn, outage_s=a.outage, outage_starts=len(starts),
-               window_s=a.window, summary=summary, volatility=cls)
+               window_s=a.window, summary=summary, volatility=cls, by_class=by_class)
     json.dump(res, open(a.out, "w"), indent=1)
     print(f"{len(data)} names, horizon {horizon / 3600:.2f} h, {len(starts)} outages of {a.outage:.0f} s after a {a.learn:.0f} s learning period")
     for k, v in summary.items():

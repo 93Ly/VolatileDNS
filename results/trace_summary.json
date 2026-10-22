@@ -1,0 +1,1138 @@
+{
+ "trace": "results/traces/real_trace.jsonl",
+ "names": 129,
+ "horizon_s": 4786.430000066757,
+ "learn_s": 2400.0,
+ "outage_s": 600.0,
+ "outage_starts": 6,
+ "window_s": 300.0,
+ "summary": {
+  "none": {
+   "queries": 15480,
+   "working": 17.60981912144703,
+   "dead": 0.0,
+   "servfail": 82.39018087855297,
+   "stale_served": 0,
+   "stale_dead_pct": 0.0
+  },
+  "fixed": {
+   "queries": 15480,
+   "working": 99.46382428940568,
+   "dead": 0.5361757105943152,
+   "servfail": 0.0,
+   "stale_served": 12754,
+   "stale_dead_pct": 0.6507762270660185
+  },
+  "ttl": {
+   "queries": 15480,
+   "working": 92.71963824289406,
+   "dead": 0.5361757105943152,
+   "servfail": 6.744186046511628,
+   "stale_served": 11710,
+   "stale_dead_pct": 0.7087959009393681
+  },
+  "volatile": {
+   "queries": 15480,
+   "working": 35.012919896640824,
+   "dead": 0.0,
+   "servfail": 64.98708010335918,
+   "stale_served": 2694,
+   "stale_dead_pct": 0.0
+  },
+  "volatile (censored estimator)": {
+   "queries": 15480,
+   "working": 35.012919896640824,
+   "dead": 0.0,
+   "servfail": 64.98708010335918,
+   "stale_served": 2694,
+   "stale_dead_pct": 0.0
+  },
+  "volatile (risk 20 %)": {
+   "queries": 15480,
+   "working": 86.99612403100775,
+   "dead": 0.0,
+   "servfail": 13.003875968992247,
+   "stale_served": 10741,
+   "stale_dead_pct": 0.0
+  },
+  "volatile (risk 50 %)": {
+   "queries": 15480,
+   "working": 98.44315245478036,
+   "dead": 0.4069767441860465,
+   "servfail": 1.1498708010335916,
+   "stale_served": 12576,
+   "stale_dead_pct": 0.5009541984732825
+  },
+  "volatile (beta 600 s)": {
+   "queries": 15480,
+   "working": 24.19250645994832,
+   "dead": 0.0,
+   "servfail": 75.80749354005168,
+   "stale_served": 1019,
+   "stale_dead_pct": 0.0
+  },
+  "volatile (beta 600 s, risk 20 %)": {
+   "queries": 15480,
+   "working": 79.48966408268734,
+   "dead": 0.0,
+   "servfail": 20.510335917312663,
+   "stale_served": 9579,
+   "stale_dead_pct": 0.0
+  },
+  "volatile (beta 180 s, risk 20 %)": {
+   "queries": 15480,
+   "working": 75.59431524547804,
+   "dead": 0.0,
+   "servfail": 24.405684754521964,
+   "stale_served": 8976,
+   "stale_dead_pct": 0.0
+  }
+ },
+ "volatility": {
+  "amazon.com.": {
+   "real_changes": 0,
+   "hours": 1.3295638889074326,
+   "ttl": 881,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "twitter.com.": {
+   "real_changes": 2,
+   "hours": 1.3295638889074326,
+   "ttl": 300,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "youtube.com.": {
+   "real_changes": 18,
+   "hours": 1.3295638889074326,
+   "ttl": 300,
+   "distinct_addrs": 19,
+   "observations": 160
+  },
+  "facebook.com.": {
+   "real_changes": 5,
+   "hours": 1.3295638889074326,
+   "ttl": 58,
+   "distinct_addrs": 6,
+   "observations": 160
+  },
+  "wikipedia.org.": {
+   "real_changes": 0,
+   "hours": 1.3295638889074326,
+   "ttl": 174,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "instagram.com.": {
+   "real_changes": 5,
+   "hours": 1.3295638889074326,
+   "ttl": 60,
+   "distinct_addrs": 6,
+   "observations": 160
+  },
+  "whatsapp.com.": {
+   "real_changes": 5,
+   "hours": 1.3295666666825612,
+   "ttl": 60,
+   "distinct_addrs": 6,
+   "observations": 160
+  },
+  "office.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 10,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "live.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 3589,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "linkedin.com.": {
+   "real_changes": 0,
+   "hours": 1.3295638889074326,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "reddit.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 300,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "yahoo.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 1751,
+   "distinct_addrs": 6,
+   "observations": 160
+  },
+  "zoom.us.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "stackoverflow.com.": {
+   "real_changes": 0,
+   "hours": 1.3295638889074326,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "netflix.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 60,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "bing.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 3595,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "github.com.": {
+   "real_changes": 0,
+   "hours": 1.3295638889074326,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "microsoft.com.": {
+   "real_changes": 5,
+   "hours": 1.3295666666825612,
+   "ttl": 3599,
+   "distinct_addrs": 6,
+   "observations": 160
+  },
+  "apple.com.": {
+   "real_changes": 0,
+   "hours": 1.3295666666825612,
+   "ttl": 900,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "google.com.": {
+   "real_changes": 12,
+   "hours": 1.3295638889074326,
+   "ttl": 300,
+   "distinct_addrs": 13,
+   "observations": 160
+  },
+  "paypal.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 300,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "cloudflare.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "discord.com.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 300,
+   "distinct_addrs": 5,
+   "observations": 160
+  },
+  "ebay.com.": {
+   "real_changes": 3,
+   "hours": 1.3295750000079474,
+   "ttl": 19,
+   "distinct_addrs": 8,
+   "observations": 160
+  },
+  "dropbox.com.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "cisco.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 1800,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "spotify.com.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "salesforce.com.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 120,
+   "distinct_addrs": 8,
+   "observations": 159
+  },
+  "oracle.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "samsung.com.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "adobe.com.": {
+   "real_changes": 5,
+   "hours": 1.3295750000079474,
+   "ttl": 20,
+   "distinct_addrs": 8,
+   "observations": 160
+  },
+  "twitch.tv.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 3600,
+   "distinct_addrs": 4,
+   "observations": 159
+  },
+  "intel.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "slack.com.": {
+   "real_changes": 0,
+   "hours": 1.3295722222328186,
+   "ttl": 60,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "amd.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 20,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "akamai.com.": {
+   "real_changes": 8,
+   "hours": 1.3295750000079474,
+   "ttl": 20,
+   "distinct_addrs": 20,
+   "observations": 160
+  },
+  "fastly.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 3600,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "ibm.com.": {
+   "real_changes": 1,
+   "hours": 1.3295750000079474,
+   "ttl": 20,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "vmware.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 150,
+   "distinct_addrs": 3,
+   "observations": 159
+  },
+  "nvidia.com.": {
+   "real_changes": 0,
+   "hours": 1.3295750000079474,
+   "ttl": 3600,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "nintendo.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "blizzard.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 120,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "pinterest.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 600,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "epicgames.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 60,
+   "distinct_addrs": 3,
+   "observations": 159
+  },
+  "steampowered.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 20,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "sony.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "roblox.com.": {
+   "real_changes": 3,
+   "hours": 1.3296111110846203,
+   "ttl": 60,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "ea.com.": {
+   "real_changes": 1,
+   "hours": 1.3296111110846203,
+   "ttl": 20,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "quora.com.": {
+   "real_changes": 1,
+   "hours": 1.3296055555343629,
+   "ttl": 60,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "forbes.com.": {
+   "real_changes": 0,
+   "hours": 1.329594444433848,
+   "ttl": 3600,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "theguardian.com.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 3600,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "nytimes.com.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 120,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "medium.com.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "cnn.com.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 60,
+   "distinct_addrs": 4,
+   "observations": 159
+  },
+  "reuters.com.": {
+   "real_changes": 0,
+   "hours": 1.329602777759234,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "washingtonpost.com.": {
+   "real_changes": 5,
+   "hours": 1.3296055555343629,
+   "ttl": 60,
+   "distinct_addrs": 20,
+   "observations": 160
+  },
+  "tumblr.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "imdb.com.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 900,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "bbc.co.uk.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 300,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "thehindu.com.": {
+   "real_changes": 0,
+   "hours": 1.3296277778016197,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "bloomberg.com.": {
+   "real_changes": 0,
+   "hours": 1.329602777759234,
+   "ttl": 3600,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "timesofindia.indiatimes.com.": {
+   "real_changes": 0,
+   "hours": 1.3296277778016197,
+   "ttl": 20,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "flipkart.com.": {
+   "real_changes": 1,
+   "hours": 1.3296250000264909,
+   "ttl": 900,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "espncricinfo.com.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 60,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "ndtv.com.": {
+   "real_changes": 0,
+   "hours": 1.3296277778016197,
+   "ttl": 20,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "hindustantimes.com.": {
+   "real_changes": 2,
+   "hours": 1.3296277778016197,
+   "ttl": 20,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "paytm.com.": {
+   "real_changes": 0,
+   "hours": 1.3296138889259763,
+   "ttl": 3597,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "irctc.co.in.": {
+   "real_changes": 0,
+   "hours": 1.3296138889259763,
+   "ttl": 3600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "zomato.com.": {
+   "real_changes": 0,
+   "hours": 1.3296138889259763,
+   "ttl": 60,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "swiggy.com.": {
+   "real_changes": 0,
+   "hours": 1.329616666701105,
+   "ttl": 60,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "myntra.com.": {
+   "real_changes": 2,
+   "hours": 1.3296222222513623,
+   "ttl": 20,
+   "distinct_addrs": 3,
+   "observations": 160
+  },
+  "hdfcbank.com.": {
+   "real_changes": 0,
+   "hours": 1.3296138889259763,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "icicibank.com.": {
+   "real_changes": 0,
+   "hours": 1.3296138889259763,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "vit.ac.in.": {
+   "real_changes": 0,
+   "hours": 1.3296111111508475,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "sbi.co.in.": {
+   "real_changes": 0,
+   "hours": 1.3296138889259763,
+   "ttl": 1800,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "iitb.ac.in.": {
+   "real_changes": 0,
+   "hours": 1.3296111111508475,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 158
+  },
+  "iitd.ac.in.": {
+   "real_changes": 0,
+   "hours": 1.329608333375719,
+   "ttl": 3600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "cam.ac.uk.": {
+   "real_changes": 0,
+   "hours": 1.329630555510521,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "stanford.edu.": {
+   "real_changes": 0,
+   "hours": 1.329630555510521,
+   "ttl": 1800,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "iisc.ac.in.": {
+   "real_changes": 0,
+   "hours": 1.3295972222089767,
+   "ttl": 400,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "harvard.edu.": {
+   "real_changes": 0,
+   "hours": 1.329630555510521,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "mit.edu.": {
+   "real_changes": 1,
+   "hours": 1.3296166666348774,
+   "ttl": 20,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "india.gov.in.": {
+   "real_changes": 0,
+   "hours": 1.3296111111508475,
+   "ttl": 600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "ietf.org.": {
+   "real_changes": 0,
+   "hours": 1.3296249999602636,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 158
+  },
+  "icann.org.": {
+   "real_changes": 0,
+   "hours": 1.3296249999602636,
+   "ttl": 600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "iana.org.": {
+   "real_changes": 0,
+   "hours": 1.3296249999602636,
+   "ttl": 3600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "kernel.org.": {
+   "real_changes": 0,
+   "hours": 1.3296111110846203,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "nodejs.org.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 159
+  },
+  "golang.org.": {
+   "real_changes": 14,
+   "hours": 1.3296083333094915,
+   "ttl": 300,
+   "distinct_addrs": 15,
+   "observations": 160
+  },
+  "python.org.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 300,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "rust-lang.org.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 300,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "ubuntu.com.": {
+   "real_changes": 0,
+   "hours": 1.3296111110846203,
+   "ttl": 60,
+   "distinct_addrs": 3,
+   "observations": 159
+  },
+  "rfc-editor.org.": {
+   "real_changes": 0,
+   "hours": 1.3296249999602636,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "debian.org.": {
+   "real_changes": 0,
+   "hours": 1.3296111110846203,
+   "ttl": 300,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "fedoraproject.org.": {
+   "real_changes": 0,
+   "hours": 1.3296083333094915,
+   "ttl": 60,
+   "distinct_addrs": 11,
+   "observations": 160
+  },
+  "mozilla.org.": {
+   "real_changes": 0,
+   "hours": 1.3296055555343629,
+   "ttl": 600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "apache.org.": {
+   "real_changes": 0,
+   "hours": 1.3296138888597488,
+   "ttl": 1800,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "postgresql.org.": {
+   "real_changes": 0,
+   "hours": 1.329650000002649,
+   "ttl": 1800,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "mysql.com.": {
+   "real_changes": 0,
+   "hours": 1.3296444444523918,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "redis.io.": {
+   "real_changes": 0,
+   "hours": 1.3296444444523918,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "docker.com.": {
+   "real_changes": 0,
+   "hours": 1.3296444444523918,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "grafana.com.": {
+   "real_changes": 0,
+   "hours": 1.3296444444523918,
+   "ttl": 597,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "mongodb.com.": {
+   "real_changes": 0,
+   "hours": 1.3296444444523918,
+   "ttl": 3600,
+   "distinct_addrs": 2,
+   "observations": 159
+  },
+  "anthropic.com.": {
+   "real_changes": 0,
+   "hours": 1.329641666677263,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "openai.com.": {
+   "real_changes": 0,
+   "hours": 1.329641666677263,
+   "ttl": 60,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "elastic.co.": {
+   "real_changes": 0,
+   "hours": 1.329641666677263,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "huggingface.co.": {
+   "real_changes": 2,
+   "hours": 1.329641666677263,
+   "ttl": 60,
+   "distinct_addrs": 12,
+   "observations": 160
+  },
+  "ox.ac.uk.": {
+   "real_changes": 0,
+   "hours": 1.329630555510521,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "udemy.com.": {
+   "real_changes": 0,
+   "hours": 1.3296361111270056,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "kubernetes.io.": {
+   "real_changes": 0,
+   "hours": 1.3296444444523918,
+   "ttl": 3600,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "coursera.org.": {
+   "real_changes": 4,
+   "hours": 1.3296388889021344,
+   "ttl": 60,
+   "distinct_addrs": 20,
+   "observations": 159
+  },
+  "nginx.org.": {
+   "real_changes": 1,
+   "hours": 1.3296472222275204,
+   "ttl": 60,
+   "distinct_addrs": 2,
+   "observations": 159
+  },
+  "kaggle.com.": {
+   "real_changes": 0,
+   "hours": 1.3296388889021344,
+   "ttl": 3600,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "berkeley.edu.": {
+   "real_changes": 0,
+   "hours": 1.329630555510521,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "edx.org.": {
+   "real_changes": 2,
+   "hours": 1.3296222221851348,
+   "ttl": 60,
+   "distinct_addrs": 12,
+   "observations": 158
+  },
+  "archlinux.org.": {
+   "real_changes": 0,
+   "hours": 1.3296111110846203,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "wordpress.com.": {
+   "real_changes": 0,
+   "hours": 1.329677777753936,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "shopify.com.": {
+   "real_changes": 0,
+   "hours": 1.329677777753936,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "archive.org.": {
+   "real_changes": 0,
+   "hours": 1.329650000002649,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "khanacademy.org.": {
+   "real_changes": 3,
+   "hours": 1.3296194444100062,
+   "ttl": 60,
+   "distinct_addrs": 16,
+   "observations": 160
+  },
+  "tensorflow.org.": {
+   "real_changes": 0,
+   "hours": 1.3296388889021344,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "squarespace.com.": {
+   "real_changes": 0,
+   "hours": 1.3296749999788073,
+   "ttl": 300,
+   "distinct_addrs": 4,
+   "observations": 160
+  },
+  "wix.com.": {
+   "real_changes": 0,
+   "hours": 1.329677777753936,
+   "ttl": 3600,
+   "distinct_addrs": 1,
+   "observations": 159
+  },
+  "blogger.com.": {
+   "real_changes": 19,
+   "hours": 1.329677777753936,
+   "ttl": 300,
+   "distinct_addrs": 20,
+   "observations": 160
+  },
+  "godaddy.com.": {
+   "real_changes": 0,
+   "hours": 1.3296749999788073,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "letsencrypt.org.": {
+   "real_changes": 0,
+   "hours": 1.3296666666534211,
+   "ttl": 120,
+   "distinct_addrs": 2,
+   "observations": 159
+  },
+  "namecheap.com.": {
+   "real_changes": 0,
+   "hours": 1.3296749999788073,
+   "ttl": 300,
+   "distinct_addrs": 2,
+   "observations": 160
+  },
+  "gnu.org.": {
+   "real_changes": 0,
+   "hours": 1.3296666666534211,
+   "ttl": 300,
+   "distinct_addrs": 1,
+   "observations": 160
+  },
+  "pytorch.org.": {
+   "real_changes": 0,
+   "hours": 1.329641666677263,
+   "ttl": 60,
+   "distinct_addrs": 1,
+   "observations": 160
+  }
+ },
+ "by_class": {
+  "none": {
+   "stable": {
+    "queries": 12360,
+    "working": 20.64724919093851,
+    "dead": 0.0,
+    "servfail": 79.35275080906149
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 5.576923076923077,
+    "dead": 0.0,
+    "servfail": 94.42307692307692
+   }
+  },
+  "fixed": {
+   "stable": {
+    "queries": 12360,
+    "working": 100.0,
+    "dead": 0.0,
+    "servfail": 0.0
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 97.33974358974359,
+    "dead": 2.66025641025641,
+    "servfail": 0.0
+   }
+  },
+  "ttl": {
+   "stable": {
+    "queries": 12360,
+    "working": 96.6504854368932,
+    "dead": 0.0,
+    "servfail": 3.349514563106796
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 77.1474358974359,
+    "dead": 2.66025641025641,
+    "servfail": 20.192307692307693
+   }
+  },
+  "volatile": {
+   "stable": {
+    "queries": 12360,
+    "working": 40.04854368932039,
+    "dead": 0.0,
+    "servfail": 59.95145631067961
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 15.064102564102564,
+    "dead": 0.0,
+    "servfail": 84.93589743589743
+   }
+  },
+  "volatile (censored estimator)": {
+   "stable": {
+    "queries": 12360,
+    "working": 40.04854368932039,
+    "dead": 0.0,
+    "servfail": 59.95145631067961
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 15.064102564102564,
+    "dead": 0.0,
+    "servfail": 84.93589743589743
+   }
+  },
+  "volatile (risk 20 %)": {
+   "stable": {
+    "queries": 12360,
+    "working": 94.78964401294499,
+    "dead": 0.0,
+    "servfail": 5.210355987055016
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 56.12179487179487,
+    "dead": 0.0,
+    "servfail": 43.87820512820513
+   }
+  },
+  "volatile (risk 50 %)": {
+   "stable": {
+    "queries": 12360,
+    "working": 100.0,
+    "dead": 0.0,
+    "servfail": 0.0
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 92.27564102564102,
+    "dead": 2.019230769230769,
+    "servfail": 5.705128205128205
+   }
+  },
+  "volatile (beta 600 s)": {
+   "stable": {
+    "queries": 12360,
+    "working": 27.92071197411003,
+    "dead": 0.0,
+    "servfail": 72.07928802588997
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 9.423076923076923,
+    "dead": 0.0,
+    "servfail": 90.57692307692308
+   }
+  },
+  "volatile (beta 600 s, risk 20 %)": {
+   "stable": {
+    "queries": 12360,
+    "working": 90.71197411003236,
+    "dead": 0.0,
+    "servfail": 9.288025889967637
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 35.032051282051285,
+    "dead": 0.0,
+    "servfail": 64.96794871794872
+   }
+  },
+  "volatile (beta 180 s, risk 20 %)": {
+   "stable": {
+    "queries": 12360,
+    "working": 86.74757281553399,
+    "dead": 0.0,
+    "servfail": 13.25242718446602
+   },
+   "changed": {
+    "queries": 3120,
+    "working": 31.41025641025641,
+    "dead": 0.0,
+    "servfail": 68.58974358974359
+   }
+  }
+ }
+}
