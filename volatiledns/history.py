@@ -65,10 +65,10 @@ class HistoryTracker:
         """Estimated changes per second.
 
         counted  - Eqn. (1):  (alpha + c) / (beta + T)
-        censored - Eqn. (4):  a cache only sees a record when it refreshes it, so an interval in which a change
-                   was seen may have held more than one.  Each detected interval of length D is counted as
-                   its expected number of changes given at least one, lam*D / (1 - exp(-lam*D)), and the rate
-                   is found by iterating  lam = (alpha + sum of those) / (beta + T)  until it settles.
+        censored - Eqn. (4.5): a cache sees a record only when it refreshes it, so an
+                   interval in which a change was seen may hold more than one.  Each
+                   detected interval D counts as lam*D / (1 - exp(-lam*D)) changes, and
+                   lam = (alpha + sum of those) / (beta + T) is iterated until it settles.
         """
         h = self.names.get(name)
         c = h.changes if h else 0
