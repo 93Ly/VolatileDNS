@@ -219,3 +219,68 @@ def test_stale_logic_only_for_a_and_aaaa():
     clk.t += 100
     up.mode = "fail"
     assert run(e.resolve("a.test", 15)).kind == "servfail"
+
+
+# ---------------------------------------------------------------- improved (interval-censored) estimator
+def test_censored_equals_counted_without_detected_changes():
+    a = HistoryTracker(estimator="counted")
+    b = HistoryTracker(estimator="censored")
+    for h in (a, b):
+        h.observe("n", ["1.1.1.1"], 0)
+        h.observe("n", ["1.1.1.1"], 500)
+    assert a.rate("n", 1000) == pytest.approx(b.rate("n", 1000))
+
+
+def test_censored_rate_is_higher_when_lookups_are_far_apart():
+    a = HistoryTracker(estimator="counted")
+    b = HistoryTracker(estimator="censored")
+    for h in (a, b):
+        h.observe("n", ["1.1.1.1"], 0)
+        for i in range(1, 11):                               # a change seen in every 1000 s interval
+            h.observe("n", [f"9.9.9.{i}"], i * 1000)
+    ra, rb = a.rate("n", 10000), b.rate("n", 10000)
+    assert rb > ra                                           # several changes per interval are likely
+    assert rb < 3 * ra                                       # but the correction stays bounded
+
+
+def test_censored_estimator_is_less_biased_on_simulated_poisson_changes():
+    import random
+    true_rate, dt = 1 / 100.0, 150.0                         # lookups every 150 s, a change about every 100 s
+    errs = {"counted": [], "censored": []}
+    for seed in range(40):
+        rng = random.Random(seed)
+        trackers = {k: HistoryTracker(prior_changes=0.01, prior_seconds=1.0, estimator=k) for k in errs}
+        t_change, ip, t = rng.expovariate(true_rate), 0, 0.0
+        for k in trackers:
+            trackers[k].observe("n", ["a0"], 0)
+        for _ in range(300):
+            t += dt
+            while t_change <= t:                             # every change since the last lookup
+                ip += 1
+                t_change += rng.expovariate(true_rate)
+            for k in trackers:
+                trackers[k].observe("n", [f"a{ip}"], t)
+        for k in errs:
+            errs[k].append(trackers[k].rate("n", t) / true_rate)
+    mean = {k: sum(v) / len(v) for k, v in errs.items()}
+    assert abs(mean["censored"] - 1) < abs(mean["counted"] - 1)
+    assert abs(mean["censored"] - 1) < 0.25
+
+
+# ---------------------------------------------------------------- coalescing of in-flight upstream queries
+def test_identical_concurrent_queries_share_one_upstream_lookup():
+    class Slow(FakeUpstream):
+        async def query(self, qname, qtype):
+            await asyncio.sleep(0.05)
+            return await FakeUpstream.query(self, qname, qtype)
+
+    async def go():
+        clk, up = Clock(), Slow()
+        e = Engine(Config(policy="fixed"), up, clk)
+        res = await asyncio.gather(*[e.resolve("a.test", 1) for _ in range(10)])
+        return e, up, res
+
+    e, up, res = asyncio.run(go())
+    assert up.calls == 1 and e.stats["coalesced"] == 9
+    assert all(r.addrs == frozenset(["1.1.1.1"]) for r in res)
+    assert e.stats["upstream_datagrams"] == 1                # counted once, not ten times

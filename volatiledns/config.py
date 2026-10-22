@@ -19,6 +19,7 @@ class Config:
     prior_seconds: float = 3600.0   # beta in Eqn. (1)  (alpha/beta = 1 change per hour)
     history_len: int = 20           # last answers remembered for rotation detection
     count_rotation: bool = False    # True = "strict" change detection (every difference counts)
+    estimator: str = "counted"      # counted = Eqn. (1);  censored = Eqn. (4), allows several changes between lookups
 
     # --- RFC 8767 timers -----------------------------------------------
     stale_ttl: int = 30             # TTL put on a stale answer

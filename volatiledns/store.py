@@ -11,7 +11,7 @@ class Store:
         PRAGMA journal_mode=WAL;
         CREATE TABLE IF NOT EXISTS cache(
             key TEXT PRIMARY KEY, addrs TEXT, ttl INTEGER, stored_at REAL,
-            expires_at REAL, negative INTEGER);
+            expires_at REAL, negative INTEGER, neg_kind TEXT, wire BLOB);
         CREATE TABLE IF NOT EXISTS history(
             id INTEGER PRIMARY KEY AUTOINCREMENT, ts REAL, key TEXT,
             addrs TEXT, real_change INTEGER);
@@ -19,6 +19,11 @@ class Store:
             id INTEGER PRIMARY KEY AUTOINCREMENT, ts REAL, key TEXT, action TEXT,
             reason TEXT, stale_age REAL, stale_limit REAL, rate REAL, policy TEXT);
         """)
+        for col in ("neg_kind TEXT", "wire BLOB"):               # databases written by earlier versions
+            try:
+                self.db.execute("ALTER TABLE cache ADD COLUMN " + col)
+            except sqlite3.OperationalError:
+                pass
         self.db.commit()
 
     def _run(self, sql, args=()):
@@ -27,9 +32,18 @@ class Store:
             self.db.commit()
 
     def upsert_cache(self, key, e):
-        self._run("INSERT OR REPLACE INTO cache VALUES (?,?,?,?,?,?)",
+        wire = e.payload.to_wire() if hasattr(e.payload, "to_wire") else None
+        self._run("INSERT OR REPLACE INTO cache VALUES (?,?,?,?,?,?,?,?)",
                   (key, ",".join(sorted(e.addrs)), e.ttl, e.stored_at, e.expires_at,
-                   int(e.negative)))
+                   int(e.negative), getattr(e, "neg_kind", "nxdomain"), wire))
+
+    def load_cache(self):
+        with self.lock:
+            return self.db.execute("select key, addrs, ttl, stored_at, expires_at, negative, neg_kind, wire from cache").fetchall()
+
+    def load_history(self):
+        with self.lock:
+            return self.db.execute("select ts, key, addrs, real_change from history order by id").fetchall()
 
     def log_history(self, ts, key, addrs, changed):
         self._run("INSERT INTO history(ts,key,addrs,real_change) VALUES (?,?,?,?)",

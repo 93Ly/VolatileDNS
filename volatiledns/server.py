@@ -129,7 +129,9 @@ class ProxyServer:
             self.tcp_server.close()
 
 
-def make_server(cfg, store=None, upstream=None, clock=time.time):
+def make_server(cfg, store=None, upstream=None, clock=time.time, restore=True):
     from .upstream import DnsUpstream
     engine = Engine(cfg, upstream or DnsUpstream(cfg), clock, store)
+    if store and restore:
+        engine.restore(dns.message.from_wire)
     return ProxyServer(engine, cfg)

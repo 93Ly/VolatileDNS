@@ -6,7 +6,8 @@ The engine knows nothing about sockets or DNS wire format.  It works on
 driven by the real network listener (server.py) or by the virtual-time
 experiment runner (testbed/simulate.py).
 """
-from dataclasses import dataclass, field
+import asyncio
+from dataclasses import dataclass, field, replace
 from typing import Any, Callable, Dict, FrozenSet, Optional, Tuple
 
 from .config import Config
@@ -54,12 +55,13 @@ class Engine:
         self.store = store
         self.cache: Dict[Tuple[str, int], Entry] = {}
         self.history = HistoryTracker(cfg.history_len, cfg.prior_changes,
-                                      cfg.prior_seconds, cfg.count_rotation)
+                                      cfg.prior_seconds, cfg.count_rotation, cfg.estimator)
+        self._inflight: Dict[Tuple[str, int], "asyncio.Future"] = {}
         self.fail_until: Dict[Tuple[str, int], float] = {}
         self.stats = {"queries": 0, "cache_hits": 0, "upstream_ok": 0,
                       "upstream_fail": 0, "upstream_datagrams": 0,
                       "stale_served": 0, "servfail": 0, "nxdomain": 0,
-                      "skipped_recheck": 0}
+                      "skipped_recheck": 0, "coalesced": 0}
 
     # ------------------------------------------------------------------
     async def resolve(self, qname: str, qtype: int) -> Result:
@@ -82,7 +84,7 @@ class Engine:
         # 2. ask the DNS server (unless it failed for this name very recently)
         up = None
         if now >= self.fail_until.get(key, 0.0):
-            up = await self.upstream.query(qname, qtype)
+            up = await self._ask_upstream(key, qname, qtype)
             self.stats["upstream_datagrams"] += up.queries
             now = self.clock()
         else:
@@ -112,6 +114,40 @@ class Engine:
                                      decision=d), now, "servfail")
 
     # ------------------------------------------------------------------
+    async def _ask_upstream(self, key, qname, qtype) -> UpstreamResult:
+        """One upstream lookup per name at a time: identical queries that arrive while one is in flight share it."""
+        fut = self._inflight.get(key)
+        if fut is not None:
+            self.stats["coalesced"] += 1
+            res = await asyncio.shield(fut)
+            return replace(res, queries=0)                  # the datagrams were already counted for the first caller
+        fut = asyncio.get_running_loop().create_future()
+        self._inflight[key] = fut
+        res = UpstreamResult("fail")
+        try:
+            res = await self.upstream.query(qname, qtype)
+            return res
+        finally:
+            fut.set_result(res)
+            self._inflight.pop(key, None)
+
+    def restore(self, parser=None) -> int:
+        """Reload the cache and the answer history from the SQLite log (after a restart)."""
+        if not self.store:
+            return 0
+        n = 0
+        for key, addrs, ttl, stored_at, expires_at, neg, neg_kind, wire in self.store.load_cache():
+            qname, qtype = key.rsplit("/", 1)
+            payload = parser(wire) if (parser and wire) else None
+            if not neg and payload is None:
+                continue                                    # a positive answer cannot be re-sent without its message
+            self.cache[(qname, int(qtype))] = Entry(frozenset(a for a in addrs.split(",") if a), ttl, stored_at,
+                                                    expires_at, bool(neg), payload, neg_kind or "nxdomain")
+            n += 1
+        for ts, key, addrs, _ in self.store.load_history():
+            self.history.observe(key, [a for a in addrs.split(",") if a], ts)
+        return n
+
     def _accept(self, key, up: UpstreamResult, now: float) -> Result:
         if up.kind in ("nxdomain", "nodata"):
             # a real "does not exist" always wins: any old address is thrown away
@@ -137,6 +173,6 @@ class Engine:
                                     d.stale_age if d else None, d.limit if d else None,
                                     d.rate if d else None, self.cfg.policy)
             e = self.cache.get(key)
-            if e is not None:
+            if e is not None and action == "upstream":          # the cache only changes when the server answered
                 self.store.upsert_cache(f"{key[0]}/{key[1]}", e)
         return res

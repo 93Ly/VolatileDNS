@@ -165,3 +165,30 @@ def test_nodata_is_cached_as_nodata_not_nxdomain():
         assert r2.rcode() == 0 and not r2.answer
         assert proxy.engine.stats["cache_hits"] >= 1
     asyncio.run(with_stack(body))
+
+
+def test_cache_and_history_survive_a_restart(tmp_path):
+    db = str(tmp_path / "restart.sqlite")
+
+    async def body():
+        auth = AuthServer(port=AUTH)
+        auth.set("portal.college.test", ["172.28.0.10"], ttl=1)
+        await auth.start()
+        p1 = make_server(cfg(), Store(db))
+        await p1.start()
+        await ask()
+        await asyncio.sleep(0.2)
+        p1.close()                                         # the proxy goes away ...
+        await asyncio.sleep(1.2)                           # ... and its answer expires meanwhile
+        auth.up = False                                    # ... while the DNS server is down as well
+        p2 = make_server(cfg(), Store(db))                 # a new proxy reloads cache and history from SQLite
+        await p2.start()
+        r = await ask()
+        assert r.answer and r.answer[0].ttl == 30 and r.answer[0][0].address == "172.28.0.10"
+        assert p2.engine.stats["stale_served"] == 1
+        assert p2.engine.history.names["portal.college.test./1"].observations == 1
+        p2.close()
+        auth.close()
+        await asyncio.sleep(0.05)
+
+    asyncio.run(body())
