@@ -25,15 +25,15 @@ async def ask(name, port=5300):
         return None
 
 
-async def main(db, hold, policy):
-    auth = AuthServer(port=5301, control_port=5302)
+async def main(db, hold, policy, base=5300):
+    auth = AuthServer(port=base + 1, control_port=base + 2)
     auth.set("portal.college.test", ["172.28.0.10"], ttl=2)
     auth.set("lab.college.test", ["172.28.0.20"], ttl=2)
     auth.set("session.college.test", ["172.28.0.30"], ttl=1)
     auth.rotate("cdn.college.test", ["172.28.0.41", "172.28.0.42", "172.28.0.43", "172.28.0.44"], k=2, ttl=2)
     auth.set("gone.college.test", ["172.28.0.50"], ttl=2)
     await auth.start()
-    cfg = Config(policy=policy, s_fix=600, s_cap=1200, listen_port=5300, upstream_port=5301, db_path=db)
+    cfg = Config(policy=policy, s_fix=600, s_cap=1200, listen_port=base, upstream_port=base + 1, db_path=db)
     proxy = make_server(cfg, Store(db))
     await proxy.start()
     names = ["portal", "lab", "session", "cdn", "gone"]
@@ -51,7 +51,7 @@ async def main(db, hold, policy):
         if 30 < el < 31:
             auth.delete("gone.college.test")
         for n in names:
-            await ask(f"{n}.college.test")
+            await ask(f"{n}.college.test", base)
         await asyncio.sleep(0.5)
     print("demo traffic finished; holding servers for", hold, "s", flush=True)
     await asyncio.sleep(hold)
@@ -62,10 +62,11 @@ if __name__ == "__main__":
     ap.add_argument("--db", default="results/demo.sqlite")
     ap.add_argument("--hold", type=float, default=0)
     ap.add_argument("--policy", default="fixed")
+    ap.add_argument("--base-port", type=int, default=5300)
     a = ap.parse_args()
     import os
     for ext in ("", "-wal", "-shm"):
         if os.path.exists(a.db + ext):
             os.remove(a.db + ext)
-    asyncio.run(main(a.db, a.hold, a.policy))
+    asyncio.run(main(a.db, a.hold, a.policy, a.base_port))
 
