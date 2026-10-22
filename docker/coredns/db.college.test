@@ -1,8 +1,9 @@
 $ORIGIN college.test.
-@ 3600 IN SOA ns.college.test. admin.college.test. ( 792697866 7200 3600 1209600 3600 )
+@ 3600 IN SOA ns.college.test. admin.college.test. ( 792698748 7200 3600 1209600 3600 )
 @ 3600 IN NS ns.college.test.
 ns 3600 IN A 172.28.0.2
 portal 10 IN A 172.28.0.10
-session 5 IN A 172.28.0.35
+session 5 IN A 172.28.0.32
+cdn 5 IN A 172.28.0.43
 cdn 5 IN A 172.28.0.44
-cdn 5 IN A 172.28.0.42
+gone 10 IN A 172.28.0.10

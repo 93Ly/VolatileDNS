@@ -220,13 +220,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--policies", nargs="+", default=["none", "fixed", "ttl", "volatile"])
     ap.add_argument("--out", default=os.path.join(ROOT, "results", "docker_results.json"))
+    ap.add_argument("--learn", type=float, default=None, help="length of the learning period in seconds (default 150)")
     a = ap.parse_args()
+    if a.learn:
+        global LEARN
+        LEARN = a.learn
     results = []
     for p in a.policies:
         label, _, est = p.partition(":")
         pol = label
         env = {"ESTIMATOR": est} if est else {}
-        res = run_policy(p.replace(":", "_"), pol, capture=(p in ("fixed", "volatile")), **env)
+        res = run_policy(p.replace(":", "_") + (f"_learn{int(a.learn)}" if a.learn else ""), pol, capture=(p in ("fixed", "volatile") and not a.learn), **env)
         res["summary"] = summarise(res)
         results.append(res)
         for k, v in res["summary"].items():
