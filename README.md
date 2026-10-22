@@ -99,4 +99,4 @@ python -m testbed.live_bench           # latency and recovery on real sockets (a
 
 RFC 1034, RFC 2308, RFC 8767 (serve-stale), RFC 8914 (Extended DNS Errors); Ballani and Francis, *Mitigating DNS DoS attacks* (CCS 2008);
 Xiao et al., *Estimating DNS source and cache dynamics* (ACM TOMPECS 2025); Moura et al., *When the dike breaks* (IMC 2018);
-US 10,721,117 B2 (Verisign), which has per-record limits set by the domain owner. The full list is in the project report.
+US 10,721,117 B2 (Verisign), which has per-record limits set by the domain owner.
