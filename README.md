@@ -9,8 +9,8 @@ Serving stale data is standard (RFC 8767) and built into Unbound, BIND and CoreD
 VolatileDNS watches how often each name's IP address *really* changes and gives each name its own limit:
 names that never move can be served stale for a long time, names that keep moving get little or none, and a hard cap bounds everything.
 
-> Computer Networks course project (BCSE308L), VIT Vellore. Status: all eight components implemented and tested;
-> Docker/CoreDNS packaging, an improved estimator and real-trace evaluation are still to do.
+> Status: all eight components are implemented and tested; Docker/CoreDNS packaging, an improved estimator and
+> real-trace evaluation are still to do.
 
 ## How it works
 
@@ -100,7 +100,3 @@ python -m testbed.live_bench           # latency and recovery on real sockets (a
 RFC 1034, RFC 2308, RFC 8767 (serve-stale), RFC 8914 (Extended DNS Errors); Ballani and Francis, *Mitigating DNS DoS attacks* (CCS 2008);
 Xiao et al., *Estimating DNS source and cache dynamics* (ACM TOMPECS 2025); Moura et al., *When the dike breaks* (IMC 2018);
 US 10,721,117 B2 (Verisign), which has per-record limits set by the domain owner. The full list is in the project report.
-
-## Authors
-
-Priyanshu Ghosh (24BDE0138) and Leya Susan Varghese (24BDE0134), supervised by Dr Navaneethan C.
