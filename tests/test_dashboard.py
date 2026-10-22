@@ -37,6 +37,7 @@ def test_dashboard_state_and_controls(tmp_path):
         page = await loop.run_in_executor(None, get, "/")
         state = json.loads(await loop.run_in_executor(None, get, "/api/state"))
         assert "monitoring dashboard" in page and "<title>VolatileDNS" in page
+        assert len(json.loads(await loop.run_in_executor(None, get, "/api/state"))["series"]) == 60
         assert state["counts"]["upstream"] >= 2 and "up=True" in state["server"]
         assert state["cache"][0]["key"] == "portal.college.test./1"
         est = state["estimates"][0]
