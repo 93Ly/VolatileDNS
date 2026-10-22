@@ -1,0 +1,7 @@
+college.test:53 {
+    file /etc/coredns/db.college.test {
+        reload 1s
+    }
+    log
+    errors
+}

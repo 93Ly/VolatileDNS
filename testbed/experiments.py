@@ -65,7 +65,8 @@ def one_seed(args):
         key = f"{name}/1"
         rate = eng0.history.rate(key, WARM)
         h = eng0.history.names[key]
-        est.append(dict(seed=seed, name=name, rate=rate, counted=h.changes,
+        rate_c = warmed["censored"][1].history.rate(key, WARM) if "censored" in warmed else rate
+        est.append(dict(seed=seed, name=name, rate=rate, rate_c=rate_c, counted=h.changes,
                         true=world0.true_changes(name, 0, WARM),
                         ttl=specs[name].ttl,
                         gap=specs[name].gap or 0))
@@ -98,6 +99,7 @@ def iter_configs(scenario, history_variants):
             for k, v in params:
                 yield f"{pol}:{k}={v}", DEFAULTS[pol].with_(**{k: v}), "default"
         yield "volatile:strict", DEFAULTS["volatile"].with_(count_rotation=True), "strict"
+        yield "volatile:censored", DEFAULTS["volatile"].with_(estimator="censored"), "censored"
         for beta in (600.0, 14400.0):
             yield f"volatile:beta={int(beta)}", DEFAULTS["volatile"].with_(prior_seconds=beta), f"beta{int(beta)}"
 
@@ -107,6 +109,7 @@ HISTORY_VARIANTS = {
     "strict": {"count_rotation": True},
     "beta600": {"prior_seconds": 600.0},
     "beta14400": {"prior_seconds": 14400.0},
+    "censored": {"estimator": "censored"},
 }
 
 
@@ -235,8 +238,12 @@ def main():
     for n, es in e_by.items():
         rate = st.mean(x["rate"] for x in es)
         ttl = es[0]["ttl"]
+        rate_c = st.mean(x["rate_c"] for x in es)
+        gap = es[0]["gap"]
         summary["estimator"][n] = dict(
-            ttl=ttl, true_gap=es[0]["gap"], mean_rate=rate,
+            ttl=ttl, true_gap=es[0]["gap"], mean_rate=rate, mean_rate_censored=rate_c, est_gap_censored=1 / rate_c,
+            rel_err_counted=st.mean(abs(x["rate"] * gap - 1) for x in es) if gap else None,
+            rel_err_censored=st.mean(abs(x["rate_c"] * gap - 1) for x in es) if gap else None,
             est_gap=1 / rate, counted=st.mean(x["counted"] for x in es),
             true_changes=st.mean(x["true"] for x in es),
             limit_volatile=st.mean(min(CAP, stale_limit_volatile(x["rate"], ttl, 0.05)) for x in es),

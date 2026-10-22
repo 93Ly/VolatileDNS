@@ -4,9 +4,15 @@ import threading
 
 
 class Store:
-    def __init__(self, path: str):
+    """flush_interval > 0: writes are committed in batches every `flush_interval` seconds (fast);
+    flush_interval == 0: every write is committed at once (safest, much slower)."""
+
+    def __init__(self, path: str, flush_interval: float = 0.25):
         self.db = sqlite3.connect(path, check_same_thread=False)
         self.lock = threading.Lock()
+        self.flush_interval = flush_interval
+        self._dirty = False
+        self._stop = threading.Event()
         self.db.executescript("""
         PRAGMA journal_mode=WAL;
         CREATE TABLE IF NOT EXISTS cache(
@@ -25,11 +31,31 @@ class Store:
             except sqlite3.OperationalError:
                 pass
         self.db.commit()
+        if flush_interval > 0:
+            threading.Thread(target=self._flusher, daemon=True).start()
+
+    def _flusher(self):
+        while not self._stop.wait(self.flush_interval):
+            self.flush()
+
+    def flush(self):
+        with self.lock:
+            if self._dirty:
+                self.db.commit()
+                self._dirty = False
+
+    def close(self):
+        self._stop.set()
+        self.flush()
+        self.db.close()
 
     def _run(self, sql, args=()):
         with self.lock:
             self.db.execute(sql, args)
-            self.db.commit()
+            if self.flush_interval <= 0:
+                self.db.commit()
+            else:
+                self._dirty = True
 
     def upsert_cache(self, key, e):
         wire = e.payload.to_wire() if hasattr(e.payload, "to_wire") else None

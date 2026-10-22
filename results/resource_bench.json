@@ -1,0 +1,12 @@
+{
+ "heap_bytes_per_name_1000": 1584.695,
+ "heap_mb_1000": 1.584695,
+ "heap_bytes_per_name_10000": 1563.5812,
+ "heap_mb_10000": 15.635812,
+ "engine_hits_per_s": 550764.5162758777,
+ "engine_hits_per_s_log_commit_each": 724.1482863524332,
+ "sqlite_bytes_per_decision": 57.26289108910891,
+ "sqlite_rows_commit_each": 4000,
+ "engine_hits_per_s_log_batched": 104549.24065480534,
+ "sqlite_rows_batched": 101000
+}

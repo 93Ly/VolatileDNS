@@ -7,3 +7,7 @@ __pycache__/
 results/*.log
 results/*.err
 results/fig_dashboard_raw.png
+results/traces/*.log
+results/traces/*.err
+docker/data/*
+docker/captures/*.pcap
