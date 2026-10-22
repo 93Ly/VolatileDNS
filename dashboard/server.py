@@ -72,86 +72,85 @@ def read_state(db_path: str, control_port: int) -> dict:
 PAGE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VolatileDNS | Resilience Console</title>
+<title>VolatileDNS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f4f6fa;--card:#ffffff;--ink:#0f172a;--ink2:#334155;--muted:#64748b;--line:#e2e8f0;--soft:#f8fafc;
-  --primary:#3b5bdb;--cache:#3b82f6;--upstream:#10b981;--stale:#f59e0b;--servfail:#ef4444;--nxdomain:#8b5cf6;
-  --bar:#0b1220;--shadow:0 1px 2px rgba(15,23,42,.05),0 4px 14px rgba(15,23,42,.05);
+  --bg:#f3f4f6;--card:#ffffff;--ink:#111827;--ink2:#374151;--muted:#6b7280;--line:#d9dde3;--soft:#f7f8fa;
+  --primary:#1f4e8c;--cache:#2b6cb0;--upstream:#2f855a;--stale:#b7791f;--servfail:#c0392b;--nxdomain:#6b5b95;
+  --bar:#16202e;--shadow:none;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0b1020;--card:#121a2c;--ink:#e8edf6;--ink2:#c3cddd;--muted:#8a97ad;--line:#222d44;--soft:#0f1627;
-    --bar:#070b16;--shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.3)}
+  :root{--bg:#0f141b;--card:#151b24;--ink:#e6e9ee;--ink2:#c2c8d1;--muted:#8b94a1;--line:#273040;--soft:#121821;
+    --bar:#0b1017;--shadow:none}
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
-.bar{background:var(--bar);color:#e8edf6;border-bottom:1px solid rgba(255,255,255,.06)}
-.bar-in{max-width:1240px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;gap:18px}
-.brand{display:flex;align-items:center;gap:11px;font-weight:700;font-size:17px;letter-spacing:-.01em}
-.brand small{display:block;font-weight:500;font-size:11px;color:#8fa0bd;letter-spacing:.04em;text-transform:uppercase;margin-top:-2px}
-.logo{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#3b5bdb,#10b981);display:grid;place-items:center}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 "IBM Plex Sans","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+.bar{background:var(--bar);color:#e6e9ee;border-bottom:1px solid rgba(255,255,255,.06)}
+.bar-in{max-width:1240px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:18px}
+.brand{font-weight:600;font-size:16px;letter-spacing:.01em}
 .spacer{flex:1}
 .meta{display:flex;gap:8px;flex-wrap:wrap}
-.tag{font-size:12px;border:1px solid rgba(255,255,255,.14);color:#c3cddd;padding:3px 10px;border-radius:999px}
-.tag b{color:#fff;font-weight:600}
-.live{display:flex;align-items:center;gap:8px;font-size:12px;color:#9fb0cc}
-.dot{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 0 0 rgba(16,185,129,.6);animation:pulse 2s infinite}
-.dot.off{background:#ef4444;animation:none}
-@keyframes pulse{70%{box-shadow:0 0 0 7px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+.tag{font-size:12px;border:1px solid rgba(255,255,255,.16);color:#b9c1ce;padding:3px 10px;border-radius:3px}
+.tag b{color:#fff;font-weight:500}
+.live{display:flex;align-items:center;gap:8px;font-size:12px;color:#9aa5b5}
+.dot{width:7px;height:7px;border-radius:50%;background:#48a77a}
+.dot.off{background:#d9534f}
 .wrap{max-width:1240px;margin:0 auto;padding:22px 22px 44px}
 .title{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
-.title h1{margin:0;font-size:22px;letter-spacing:-.015em}
+.title h1{margin:0;font-size:20px;font-weight:600}
 .title p{margin:2px 0 0;color:var(--muted);font-size:13px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:4px}
 .row{display:grid;gap:16px;margin-bottom:16px}
 .r1{grid-template-columns:330px minmax(0,1fr) 310px;align-items:start}
 @media (max-width:1180px){.r1{grid-template-columns:1fr}}
 .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
 .srv{padding:18px 20px}
 .state{display:flex;align-items:center;gap:12px;margin:8px 0 12px}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:8px;font-weight:700;font-size:17px;letter-spacing:.03em}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:3px;font-weight:600;font-size:15px;letter-spacing:.04em}
 .pill i{width:9px;height:9px;border-radius:50%;background:currentColor;display:inline-block}
-.pill.up{background:rgba(16,185,129,.13);color:#059669}
-.pill.down{background:rgba(239,68,68,.13);color:#dc2626}
+.pill.up{background:rgba(47,133,90,.14);color:var(--upstream)}
+.pill.down{background:rgba(192,57,43,.14);color:var(--servfail)}
 .pill.unk{background:rgba(100,116,139,.15);color:var(--muted)}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
-.fact{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+.fact{background:var(--soft);border:1px solid var(--line);border-radius:3px;padding:7px 10px}
 .fact b{display:block;font-size:16px;font-variant-numeric:tabular-nums}.fact span{font-size:11px;color:var(--muted)}
 .btns{display:flex;gap:8px}
-button{font:inherit;font-weight:600;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);
-  padding:8px 14px;border-radius:8px;cursor:pointer;transition:background .15s,box-shadow .15s,transform .05s}
-button:hover{box-shadow:0 2px 8px rgba(15,23,42,.15)}button:active{transform:translateY(1px)}
+button{font:inherit;font-weight:500;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);
+  padding:8px 14px;border-radius:3px;cursor:pointer}
+button:hover{filter:brightness(1.08)}
 .btns button{flex:1}
-button.danger{background:#ef4444;border-color:#ef4444;color:#fff}
-button.ok{background:#10b981;border-color:#10b981;color:#fff}
+button.danger{background:var(--servfail);border-color:var(--servfail);color:#fff}
+button.ok{background:var(--upstream);border-color:var(--upstream);color:#fff}
 button.primary{background:var(--primary);border-color:var(--primary);color:#fff}
 .mv{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 .mv .f{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
-select,input{font:inherit;font-size:13px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);min-width:0}
+select,input{font:inherit;font-size:13px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:var(--card);color:var(--ink);min-width:0}
 .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 @media (max-width:1100px){.kpis{grid-template-columns:repeat(2,1fr)}}
 .kpis{margin-bottom:16px}
 .kpi{padding:16px 18px;position:relative;overflow:hidden}
-.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c)}
-.kpi .n{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.15;margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--c)}
+.kpi .n{font-size:28px;font-weight:500;line-height:1.15;margin-top:4px;font-variant-numeric:tabular-nums}
 .kpi .s{font-size:12px;color:var(--muted);margin-top:2px}
-.kpi .m{height:5px;border-radius:9px;background:var(--line);margin-top:10px;overflow:hidden}
-.kpi .m i{display:block;height:100%;background:var(--c);border-radius:9px;transition:width .4s}
+.kpi .m{height:4px;border-radius:2px;background:var(--line);margin-top:10px;overflow:hidden}
+.kpi .m i{display:block;height:100%;background:var(--c);border-radius:2px}
 .ch{padding:16px 20px 12px}
 .ch-h{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px}
-.ch-h h2,.sh h2{margin:0;font-size:15px;font-weight:650}
+.ch-h h2,.sh h2{margin:0;font-size:14px;font-weight:600}
 .ch-h span,.sh span.sub{color:var(--muted);font-size:12px}
 svg{display:block;width:100%;height:auto}
 .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:var(--ink2)}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:1px;margin-right:6px;vertical-align:-1px}
 .mix{padding:16px 20px}
-.stack{display:flex;height:16px;border-radius:9px;overflow:hidden;background:var(--line);margin:12px 0 14px}
-.stack i{display:block;height:100%;transition:width .4s}
+.stack{display:flex;height:12px;border-radius:2px;overflow:hidden;background:var(--line);margin:12px 0 14px}
+.stack i{display:block;height:100%}
 .mrow{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
 .mrow:first-of-type{border-top:0}
 .mrow span:first-child{display:flex;align-items:center;gap:8px}
-.mrow i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.mrow i{width:10px;height:10px;border-radius:1px;display:inline-block}
 .mrow b{font-variant-numeric:tabular-nums}.mrow em{font-style:normal;color:var(--muted);margin-left:8px;font-size:12px}
 section{margin-bottom:16px}
 .sh{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
@@ -164,34 +163,31 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 td{padding:9px 20px;border-bottom:1px solid var(--line);white-space:nowrap;color:var(--ink2)}
 tbody tr:last-child td{border-bottom:0}
 tbody tr:hover td{background:var(--soft)}
-.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;color:var(--ink)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;font-size:12.5px;color:var(--ink)}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
-.badge{display:inline-flex;align-items:center;gap:6px;padding:2px 10px;border-radius:6px;font-size:11.5px;font-weight:650;
+.badge{display:inline-flex;align-items:center;gap:6px;padding:2px 8px;border-radius:3px;font-size:11.5px;font-weight:500;
   color:var(--c);background:color-mix(in srgb,var(--c) 13%,transparent)}
 .badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--c)}
 .b-cache{--c:var(--cache)}.b-upstream{--c:var(--upstream)}.b-stale{--c:var(--stale)}
-.b-servfail{--c:var(--servfail)}.b-nxdomain{--c:var(--nxdomain)}.b-fresh{--c:#10b981}
+.b-servfail{--c:var(--servfail)}.b-nxdomain{--c:var(--nxdomain)}.b-fresh{--c:var(--upstream)}
 .b-expired{--c:#94a3b8}.b-neg{--c:var(--nxdomain)}.b-none{--c:var(--servfail)}
 .lim{display:flex;align-items:center;gap:12px;min-width:230px}
-.tr{flex:1;height:7px;border-radius:9px;background:var(--line);overflow:hidden}
-.fl{height:100%;border-radius:9px;background:linear-gradient(90deg,#3b5bdb,#10b981)}
+.tr{flex:1;height:6px;border-radius:2px;background:var(--line);overflow:hidden}
+.fl{height:100%;border-radius:2px;background:var(--primary)}
 .empty{padding:26px 20px;color:var(--muted);text-align:center}
 footer{color:var(--muted);font-size:12px;text-align:center;padding-top:6px}
 </style></head>
 <body>
 <div class="bar"><div class="bar-in">
-  <div class="brand">
-    <div class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 4 5.8 4 9s-1.4 6.2-4 9c-2.6-2.8-4-5.8-4-9s1.4-6.2 4-9z"/></svg></div>
-    <div>VolatileDNS<small>Resilience console</small></div>
-  </div>
+  <div class="brand">VolatileDNS</div>
   <div class="spacer"></div>
   <div class="meta"><span class="tag">Policy <b id="policy">-</b></span><span class="tag">Decisions <b id="total">0</b></span></div>
   <div class="live"><span id="dot" class="dot"></span><span id="upd">connecting...</span></div>
 </div></div>
 
 <div class="wrap">
-  <div class="title"><div><h1>Overview</h1>
-  <p>DNS resilience monitoring dashboard: cache, learned change rates and every stale-answer decision of the proxy.</p></div></div>
+  <div class="title"><div><h1>Proxy status</h1>
+  <p>Cache contents, learned change rates and every stale-answer decision.</p></div></div>
 
   <div class="kpis" id="kpis"></div>
 
